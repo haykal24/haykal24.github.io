@@ -1,48 +1,45 @@
- $(function() {
+window.addEventListener("DOMContentLoaded", function () {
+  // get the form elements defined in your form HTML above
 
-    // Get the form.
-    var form = $('#contact-form');
+  var form = document.getElementById("dreamit-form");
+  // var button = document.getElementById("my-form-button");
+  var status = document.getElementById("status");
 
-    // Get the messages div.
-    var formMessages = $('.form-message');
+  // Success and Error functions for after the form is submitted
 
-    // Set up an event listener for the contact form.
-    $(form).submit(function(e) {
-        // Stop the browser from submitting the form.
-        e.preventDefault();
+  function success() {
+    form.reset();
+    status.classList.add("success");
+    status.innerHTML = "Thank you message sent.!";
+  }
 
-        // Serialize the form data.
-        var formData = $(form).serialize();
+  function error() {
+    status.classList.add("error");
+    status.innerHTML = "Oops! There was a problem.";
+  }
 
-        // Submit the form using AJAX.
-        $.ajax({
-            type: 'POST',
-            url: $(form).attr('action'),
-            data: formData
-        })
-        .done(function(response) {
-            // Make sure that the formMessages div has the 'success' class.
-            $(formMessages).removeClass('error');
-            $(formMessages).addClass('success');
+  // handle the form submission event
 
-            // Set the message text.
-            $(formMessages).text(response);
-
-            // Clear the form.
-            $('#contact-form input, #contact-form textarea').val('');
-        })
-        .fail(function(data) {
-            // Make sure that the formMessages div has the 'error' class.
-            $(formMessages).removeClass('success');
-            $(formMessages).addClass('error');
-
-            // Set the message text.
-            if (data.responseText !== '') {
-                $(formMessages).text(data.responseText);
-            } else {
-                $(formMessages).text('Oops! An error occurred and your message could not be sent.');
-            }
-        });
-    });
-
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+  });
 });
+
+// helper function for sending an AJAX request
+
+function ajax(method, url, data, success, error) {
+  var xhr = new XMLHttpRequest();
+  xhr.open(method, url);
+  xhr.setRequestHeader("Accept", "application/json");
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+      success(xhr.response, xhr.responseType);
+    } else {
+      error(xhr.status, xhr.response, xhr.responseType);
+    }
+  };
+  xhr.send(data);
+}
