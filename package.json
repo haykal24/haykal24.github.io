@@ -1,0 +1,16 @@
+{
+  "name": "main-file",
+  "version": "1.0.0",
+  "main": "purgecss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "purgecss": "purgecss --config purgecss.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "purgecss": "^6.0.0"
+  }
+}
