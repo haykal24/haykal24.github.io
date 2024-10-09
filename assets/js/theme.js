@@ -29,12 +29,16 @@
             sticky.addClass('sticky');
         }
     });
-
-    // Loder  //
-    $(function () {
-      $('body').addClass('loaded');
+// Loader
+function loader() {
+    $(window).on('load', function () {
+        // Animate loader off screen
+        $(".preloader").addClass('loaded');
+        $(".preloader").delay(600).fadeOut();
     });
+}
 
+loader();
 
       // testimonial Active
       $('.hero-active').owlCarousel({

@@ -39,12 +39,41 @@
 		
 	</head>
 <body>
-	<!-- loder -->
-	<div class="loader-wrapper">
-	  <div class="loader"></div>
-	  <div class="loder-section left-section"></div>
-	  <div class="loder-section right-section"></div>
-	</div>
+	<!-- Preloader Start -->
+<div id="preloader" class="preloader">
+    <div class="animation-preloader">
+        <div class="spinner"></div>
+        <div class="txt-loading">
+            <span data-text-preloader="C" class="letters-loading">C</span>
+            <span data-text-preloader="E" class="letters-loading">E</span>
+            <span data-text-preloader="P" class="letters-loading">P</span>
+            <span data-text-preloader="A" class="letters-loading">A</span>
+            <span data-text-preloader="T" class="letters-loading">T</span>
+            <span data-text-preloader="B" class="letters-loading">B</span>
+            <span data-text-preloader="E" class="letters-loading">E</span>
+            <span data-text-preloader="R" class="letters-loading">R</span>
+            <span data-text-preloader="E" class="letters-loading">E</span>
+            <span data-text-preloader="S" class="letters-loading">S</span>
+        </div>
+        <p class="text-center loader-text">Loading</p>
+    </div>
+    <div class="loader">
+        <div class="row">
+            <div class="col-3 loader-section section-left">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-left">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+                <div class="bg"></div>
+            </div>
+            <div class="col-3 loader-section section-right">
+                <div class="bg"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -58,10 +87,10 @@
 			<div class="col-lg-2">
 				<div class="logo">
 					<a class="logo_img" href="index.html" title="solutek">
-						<img src="assets/images/logo.png" alt="logo">
+						<img src="assets/images/logo-color.png" alt="logo" class="logo-size">
 					</a>
 					<a class="main_sticky" href="index.html" title="solutek">
-						<img src="assets/images/footer-logo.png" alt="astute">
+						<img src="assets/images/logo-white.png" alt="astute" style="width: 120px; height: auto;">
 					</a>
 				</div>
 			</div>
@@ -69,11 +98,6 @@
 				<nav class="solutek_menu">
 					<ul class="nav_scroll">
 						<li><a href="#">Home <i class="bi bi-chevron-down"></i></a>
-							<ul class="sub-menu">
-								<li><a href="index.html">Home Version 01</a></li>
-								<li><a href="index-2.html">Home Version 02</a></li>
-								<li><a href="index-3.html">Home Version 03</a></li>
-							</ul>
 						</li>
 						<li><a href="#">Company <i class="bi bi-chevron-down"></i></a>
 							<ul class="sub-menu">
@@ -107,8 +131,8 @@
 				</nav>
 			</div>
 			<div class="col-lg-2">
-				<div class="header-btn">
-					<a href="contact.html">Get A Quote NOW <i class="bi bi-arrow-right"></i></a>
+				<div class="header-btn" >
+					<a href="contact.html" style="color: #e0e0e0;">Get A Quote NOW <i class="bi bi-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>
@@ -121,12 +145,7 @@
 	<div class="mobile-menu">
 		<nav class="solutek_menu">
 			<ul class="nav_scroll">
-				<li><a href="#">Home <i class="bi bi-chevron-down"></i></a>
-					<ul class="sub-menu">
-						<li><a href="index.html">Home Version 01</a></li>
-						<li><a href="index-2.html">Home Version 02</a></li>
-						<li><a href="index-3.html">Home Version 03</a></li>
-					</ul>
+				<li><a href="#">Home</a>
 				</li>
 				<li><a href="#">Company <i class="bi bi-chevron-down"></i></a>
 					<ul class="sub-menu">
@@ -180,39 +199,66 @@
 <!-- Start solutek hero Area -->
 <!--==================================================-->
 
-
-	<div class="hero-area d-flex align-items-center">
-		<div class="container">
-			<div class="row hero align-items-center">
-				<div class="col-lg-6">
-					<div class="hero-contant">
-						<h5>SOLUTEK IT SERVICES</h5>
-						<h1>The Beauty Behind</h1>
-						<h1>IT Services.</h1>
-						<p>Where your interests international networks intersect provid
-							custom software solutions for any value software.</p>
-						<div class="solutek-btn">
-							<a href="about-us.html">EXPLORE MORE
-								<div class="solutek-hover-btn hover-bx"></div>
-								<div class="solutek-hover-btn hover-bx2"></div>
-								<div class="solutek-hover-btn hover-bx3"></div>
-								<div class="solutek-hover-btn hover-bx4"></div>
-							</a>
-						</div>
-						<div class="hero-video-icon">	
-							<a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=Wx48y_fOfiY"><i class="bi bi-play"></i><span>WATCH VIDEO</span></a>
-						</div>
-					</div>
+<div class="hero-area d-flex align-items-center">
+	<div class="container">
+		<div class="row hero align-items-center">
+			<div class="col-lg-6">
+				<div class="hero-contant">
+                    <h5 class="subtitle"><img src="assets/images/icon/subtitleIcon1_1.svg" alt="icon" /> Semua Kebutuhan Digital di Satu Tempat</h5>
+                    <h1>Inovasi <span class="gradient-text-1">Bisnis</span> dengan Solusi <span class="gradient-text-1">Digital</span> Terbaik</h1>
+                    
+                    <div class="service-list row">
+                        <div class="col-lg-6">
+                            <div class="service-item"><img src="assets/images/icon/checkmarkIcon2.svg" alt="icon" /> Jasa Joki Tugas dan Skripsi</div>
+                            <div class="service-item"><img src="assets/images/icon/checkmarkIcon2.svg" alt="icon" /> Pembuatan Website</div>
+                            <div class="service-item"><img src="assets/images/icon/checkmarkIcon2.svg" alt="icon" /> Pembuatan Undangan Digital</div>
+                            <div class="service-item"><img src="assets/images/icon/checkmarkIcon2.svg" alt="icon" /> Pembuatan Landing Page</div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="service-item"><img src="assets/images/icon/checkmarkIcon2.svg" alt="icon" /> Pemasaran Digital</div>
+                            <div class="service-item"><img src="assets/images/icon/checkmarkIcon2.svg" alt="icon" /> Solusi Cepat dan Efektif</div>
+                            <div class="service-item"><img src="assets/images/icon/checkmarkIcon2.svg" alt="icon" /> Optimasi Google Ads dan FB Ads</div>
+                            <div class="service-item"><img src="assets/images/icon/checkmarkIcon2.svg" alt="icon" /> WA Broadcast Marketing</div>
+                        </div>
+                    
+                    <div class="solutek-btn mt-3">
+                        <a href="contact.html">Konsultasi Gratis
+                            <div class="solutek-hover-btn hover-bx"></div>
+                            <div class="solutek-hover-btn hover-bx2"></div>
+                            <div class="solutek-hover-btn hover-bx3"></div>
+                            <div class="solutek-hover-btn hover-bx4"></div>
+                        </a>
+                    </div>
 				</div>
-				<div class="col-lg-6">
-					<div class="hero-thumb">
-						<img src="assets/images/hero-thumb.png" alt="hero-thumb">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-thumb">
+                    <img src="assets/images/hero/BG.png" alt="hero-thumb">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+/* CSS untuk daftar layanan */
+.service-list {
+    margin-top: 20px; /* Jarak atas */
+}
 
+.service-item {
+	color: #e0e0e0;
+    border-radius: 5px; /* Sudut melengkung */
+    gap: 10px;
+    
+    
+}
+
+.service-item img {
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+}
+
+</style>
 <!--==================================================-->
 <!-- end solutek hero Area -->
 <!--==================================================-->
@@ -224,65 +270,64 @@
 <!-- Start solutek about Area -->
 <!--==================================================-->
 
-	<div class="feature-area">
-		<div class="container">
-			<div class="row about align-items-center">
-				<div class="feature-box">
-					<div class="feature-sinble-single-box">
-						<div class="feature-icon">
-							<img src="assets/images/feature1.png" alt="feature1">
-						</div>
-						<div class="feature-content">
-							<h3 class="feature-title">Data Security</h3>
-							<p class="feature-text">Monotonectally solutek in
-							fermentum quis</p>
-						</div>
+<div class="feature-area">
+	<div class="container">
+		<div class="row about align-items-center">
+			<div class="feature-box">
+				<div class="feature-sinble-single-box">
+					<div class="feature-icon">
+						<i class="fas fa-lock" style="font-size: 24px;"></i> <!-- Data Security Icon -->
 					</div>
-					<div class="feature-sinble-single-box">
-						<div class="feature-icon">
-							<img src="assets/images/feature2.png" alt="feature1">
-						</div>
-						<div class="feature-content">
-							<h3 class="feature-title">Digital Marketing</h3>
-							<p class="feature-text">Monotonectally solutek in
-							fermentum quis</p>
-						</div>
+					<div class="feature-content">
+						<h3 class="feature-title">Data Security</h3>
+						<p class="feature-text">Monotonectally solutek in
+						fermentum quis</p>
 					</div>
-					<div class="feature-sinble-single-box">
-						<div class="feature-icon">
-							<img src="assets/images/feature3.png" alt="feature1">
-						</div>
-						<div class="feature-content">
-							<h3 class="feature-title">IT Consultation</h3>
-							<p class="feature-text">Monotonectally solutek in
-							fermentum quis</p>
-						</div>
+				</div>
+				<div class="feature-sinble-single-box">
+					<div class="feature-icon">
+						<i class="fas fa-bullhorn" style="font-size: 24px;"></i> <!-- Digital Marketing Icon -->
 					</div>
-					<div class="feature-sinble-single-box">
-						<div class="feature-icon">
-							<img src="assets/images/feature4.png" alt="feature1">
-						</div>
-						<div class="feature-content">
-							<h3 class="feature-title">Cloud Services</h3>
-							<p class="feature-text">Monotonectally solutek in
-							fermentum quis</p>
-						</div>
+					<div class="feature-content">
+						<h3 class="feature-title">Digital Marketing</h3>
+						<p class="feature-text">Monotonectally solutek in
+						fermentum quis</p>
 					</div>
-					<div class="feature-sinble-single-box">
-						<div class="feature-icon">
-							<img src="assets/images/feature5.png" alt="feature1">
-						</div>
-						<div class="feature-content">
-							<h3 class="feature-title">Technology</h3>
-							<p class="feature-text">Monotonectally solutek in
-							fermentum quis</p>
-						</div>
+				</div>
+				<div class="feature-sinble-single-box">
+					<div class="feature-icon">
+						<i class="fas fa-comments" style="font-size: 24px;"></i> <!-- IT Consultation Icon -->
+					</div>
+					<div class="feature-content">
+						<h3 class="feature-title">IT Consultation</h3>
+						<p class="feature-text">Monotonectally solutek in
+						fermentum quis</p>
+					</div>
+				</div>
+				<div class="feature-sinble-single-box">
+					<div class="feature-icon">
+						<i class="fas fa-cloud" style="font-size: 24px;"></i> <!-- Cloud Services Icon -->
+					</div>
+					<div class="feature-content">
+						<h3 class="feature-title">Cloud Services</h3>
+						<p class="feature-text">Monotonectally solutek in
+						fermentum quis</p>
+					</div>
+				</div>
+				<div class="feature-sinble-single-box">
+					<div class="feature-icon">
+						<i class="fas fa-cogs" style="font-size: 24px;"></i> <!-- Technology Icon -->
+					</div>
+					<div class="feature-content">
+						<h3 class="feature-title">Technology</h3>
+						<p class="feature-text">Monotonectally solutek in
+						fermentum quis</p>
 					</div>
 				</div>
 			</div>
-		</div>	
-	</div>
-
+		</div>
+	</div>	
+</div>
 <!--==================================================-->
 <!-- end solutek about Area -->
 <!--==================================================-->
