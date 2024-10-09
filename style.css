@@ -506,8 +506,8 @@ nav.solutek_menu span {
 
 .solutek_nav_manu.sticky a.dtbtn {
   color: #fff;
-  background: #f16722;
-  border: 2px solid #f16722;
+  background: #51ade5 ;
+  border: 2px solid #51ade5;
 }
 
 .solutek_nav_manu.sticky a.dtbtn:hover {
@@ -741,8 +741,22 @@ nav.solutek_menu span {
   margin-bottom: 30px;
   transition: 0.5s;
 }
-
-.feature-sinble-single-box::before {
+.feature-sinble-single-box:hover {
+  background: #51ade5;
+}
+.feature-icon {
+  position: relative; /* Added to ensure hover effect works */
+}
+.feature-icon:hover {
+  background: white;
+  border: 1px solid white;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+/* .feature-sinble-single-box::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -775,7 +789,7 @@ nav.solutek_menu span {
 .feature-sinble-single-box:hover:after {
   transform: perspective(500px) rotateX(0deg);
   opacity: 1;
-}
+} */
 
 .feature-icon {
   width: 75px;
