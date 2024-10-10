@@ -19,8 +19,8 @@ html {
 }
 
 body {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem; /* Mengubah dari px ke rem */
+  line-height: 1.625rem; /* Mengubah dari px ke rem */
   color: #7a7a7a;
   font-weight: 400;
   font-style: normal;
@@ -28,10 +28,6 @@ body {
   font-family: "Fira Sans";
 }
 
-p {
-  font-weight: 400;
-  font-style: normal;
-}
 h1,
 h2,
 h3,
@@ -41,59 +37,30 @@ h6 {
   color: #050a1e;
   font-family: "Poppins";
   font-style: normal;
-  font-size: 42px;
-  line-height: 55px;
+  font-size: 2.625rem; /* Mengubah dari px ke rem */
+  line-height: 3rem; /* Mengubah dari px ke rem */
   font-weight: 700;
 }
 
-a {
-  -webkit-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-a {
-  color: #0e1317;
-  font-family: "Open Sans", sans-serif;
-  text-decoration: none;
-}
-a:focus,
-.btn:focus {
-  text-decoration: none;
-  outline: none;
-}
-a:focus,
-a:hover {
-  text-decoration: none;
-  color: #ff3c00;
-}
-
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-  color: inherit;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
 h1 {
-  font-size: 48px;
+  font-size: 3rem; /* Mengubah dari px ke rem */
 }
 h2 {
-  font-size: 35px;
+  font-size: 2.1875rem; /* Mengubah dari px ke rem */
 }
 h3 {
-  font-size: 30px;
+  font-size: 1.875rem; /* Mengubah dari px ke rem */
 }
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem; /* Mengubah dari px ke rem */
 }
 h5 {
-  font-size: 20px;
+  font-size: 1.25rem; /* Mengubah dari px ke rem */
 }
 h6 {
-  font-size: 18px;
+  font-size: 1.125rem; /* Mengubah dari px ke rem */
 }
+
 ul {
   margin: 0px;
   padding: 0px;

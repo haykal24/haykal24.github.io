@@ -9,34 +9,32 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
 
 /*TABLE OF CONTENTS*/
 /*=====================
-01. solutek Nav Menu Area Css
-02. solutek hero Area Css
-03. solutek feature Area Css
-04. solutek section-title Area Css
-05. solutek contact Area Css
-06. solutek blog Area Css 
-07. solutek about Area Css
-08. solutek service Area Css
-09. solutek project Area Css
-10. solutek brand Area Css
-11. solutek pricing Area Css
-12. solutek faq-area Css
-13. solutek testimonial-area Css
-14. solutek address-area Css
-15. solutek footer-area Css
-17. solutek copyright css
-18. solutek Home two Css
-19. solutek home page 03 css
-20. solutek marquee section css
-21. solutek team Area css
-22. solutek Breadcumb Area Css
-23. solutek about us Area css
-24. solutek Team Details Area css
-25. solutek skill bar css
-26. solutek services details area css
-27. solutek case study area css
-28. solutek project details area css
-29. solutek blog details css
+01. Nav Menu Area
+02. hero Area
+03. feature Area
+04. section-title Area
+05. contact Area
+06. blog Area 
+07. about Area
+08. service Area
+09. project Area
+10. brand Area
+11. pricing Area
+12. faq-area
+13. testimonial-area
+14. address-area
+15. footer-area
+17. copyright
+20. marquee section
+21. team Area
+22. Breadcumb Area
+23. about us Area
+24. Team Details Area
+25. skill bar
+26. services details area
+27. case study area
+28. project details area
+29. blog details
 
 =======================*/
 
@@ -53,7 +51,7 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
   --senary-color: #51ade5; /* Updated senary color */
   --septenary-color: #51ade5; /* Updated septenary color */
   --octonary-color: #51ade5; /* Updated octonary color */
-  
+
   /* Added linear gradients */
   --linear-primary: linear-gradient(90deg, #2c3892, #51ade5);
   --linear-secondary: linear-gradient(90deg, #51ade5, #2c3892);
@@ -64,15 +62,15 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
   --linear-septenary: linear-gradient(90deg, #51ade5, #51ade5);
   --linear-octonary: linear-gradient(90deg, #51ade5, #51ade5);
   /* Base Colors */
---base-color-1:#51ade5 ; /* Updated Base Color 1 #FF5733 */
---base-color-2: #ffffff; /* Updated Base Color 2 */
+  --base-color-1: #51ade5; /* Updated Base Color 1 #FF5733 */
+  --base-color-2: #ffffff; /* Updated Base Color 2 */
 
-/* Linear Gradients for 3D Effect */
---linear-1: linear-gradient(135deg, var(--base-color-1) 0%, var(--base-color-2) 100%); /* Updated Gradien utama */
---linear-2: linear-gradient(225deg, var(--base-color-2) 0%, var(--base-color-1) 100%); /* Updated Gradien terbalik */
---linear-3: linear-gradient(45deg, rgba(255, 87, 51, 0.8) 0%, rgba(53, 114, 239, 0.8) 100%); /* Updated Campuran dengan transparansi */
---linear-4: linear-gradient(315deg, var(--base-color-1) 0%, rgba(255, 87, 51, 0.5) 50%, var(--base-color-2) 100%); /* Updated Campuran dengan transparansi */
---linear-5: linear-gradient(90deg, rgba(255, 87, 51, 0.5) 0%, rgba(53, 114, 239, 0.5) 100%); /* Updated Transparan dari biru tua ke biru muda */
+  /* Linear Gradients for 3D Effect */
+  --linear-1: linear-gradient(135deg, var(--base-color-1) 0%, var(--base-color-2) 100%); /* Updated Gradien utama */
+  --linear-2: linear-gradient(225deg, var(--base-color-2) 0%, var(--base-color-1) 100%); /* Updated Gradien terbalik */
+  --linear-3: linear-gradient(45deg, rgba(255, 87, 51, 0.8) 0%, rgba(53, 114, 239, 0.8) 100%); /* Updated Campuran dengan transparansi */
+  --linear-4: linear-gradient(315deg, var(--base-color-1) 0%, rgba(255, 87, 51, 0.5) 50%, var(--base-color-2) 100%); /* Updated Campuran dengan transparansi */
+  --linear-5: linear-gradient(90deg, rgba(255, 87, 51, 0.5) 0%, rgba(53, 114, 239, 0.5) 100%); /* Updated Transparan dari biru tua ke biru muda */
 }
 
 /* CSS classes for calling colors in HTML */
@@ -147,10 +145,7 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
   background: linear-gradient(90deg, #ffffff, #51ade5); /* Gradien dari putih ke #51ade5 */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Membuat teks transparan untuk menampilkan gradien */
-  text-shadow: 
-    1px 1px 0 rgba(81, 173, 229, 0.7),  /* Bayangan pertama dengan warna #51ade5 */
-    2px 2px 0 rgba(81, 173, 229, 0.5),  /* Bayangan kedua */
-    3px 3px 0 rgba(81, 173, 229, 0.3);  /* Bayangan ketiga untuk kedalaman */
+  text-shadow: 1px 1px 0 rgba(81, 173, 229, 0.7), /* Bayangan pertama dengan warna #51ade5 */ 2px 2px 0 rgba(81, 173, 229, 0.5), /* Bayangan kedua */ 3px 3px 0 rgba(81, 173, 229, 0.3); /* Bayangan ketiga untuk kedalaman */
 }
 
 .gradient-text-2 {
@@ -169,7 +164,6 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
   background: var(--linear-4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
 
 .gradient-text-5 {
@@ -223,31 +217,79 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
 
 @media (max-width: 767px) {
   .txt-loading {
-      font-size: 2.5em;
+    font-size: 2.5em;
+  }
+}
+
+.txt-loading {
+  font: bold 5em "Rajdhani", sans-serif;
+  text-align: center;
+  user-select: none;
+  perspective: 1000px; /* Menambahkan perspektif untuk efek 3D */
+}
+
+@media (max-width: 767px) {
+  .txt-loading {
+    font-size: 2.5em;
   }
 }
 
 .letters-loading {
-  display: inline-block; /* Make each letter inline-block */
+  display: inline-block;
   position: relative;
-  animation: colorChange 1s forwards; /* Add color change animation */
+  animation: letter3D 1.6s infinite;
 }
 
-@keyframes colorChange {
-  0% { color: #3498db; }
-  100% { color: #51ade5; } /* Change to desired color */
+@keyframes letter3D {
+  0%,
+  100% {
+    transform: rotateY(0deg);
+    color: #3498db;
+  }
+  25% {
+    transform: rotateY(30deg) translateZ(20px);
+    color: #2980b9;
+  }
+  50% {
+    transform: rotateY(0deg) translateZ(40px);
+    color: #51ade5;
+  }
+  75% {
+    transform: rotateY(-30deg) translateZ(20px);
+    color: #2980b9;
+  }
 }
 
-.letters-loading:nth-child(1) { animation-delay: 0s; }
-.letters-loading:nth-child(2) { animation-delay: 0.1s; }
-.letters-loading:nth-child(3) { animation-delay: 0.2s; }
-.letters-loading:nth-child(4) { animation-delay: 0.3s; }
-.letters-loading:nth-child(5) { animation-delay: 0.4s; }
-.letters-loading:nth-child(6) { animation-delay: 0.5s; }
-.letters-loading:nth-child(7) { animation-delay: 0.6s; }
-.letters-loading:nth-child(8) { animation-delay: 0.7s; }
-.letters-loading:nth-child(9) { animation-delay: 0.8s; }
-.letters-loading:nth-child(10) { animation-delay: 0.9s; }
+.letters-loading:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.letters-loading:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.letters-loading:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.letters-loading:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.letters-loading:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.letters-loading:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.letters-loading:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.letters-loading:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.letters-loading:nth-child(9) {
+  animation-delay: 0.9s;
+}
+.letters-loading:nth-child(10) {
+  animation-delay: 1s;
+}
 
 .loader-text {
   font-size: 15px;
@@ -506,7 +548,7 @@ nav.solutek_menu span {
 
 .solutek_nav_manu.sticky a.dtbtn {
   color: #fff;
-  background: #51ade5 ;
+  background: #51ade5;
   border: 2px solid #51ade5;
 }
 
@@ -518,12 +560,10 @@ nav.solutek_menu span {
   overflow: hidden;
 }
 
-
-
 .header-btn {
   text-align: right;
 }
-.logo .logo-size{
+.logo .logo-size {
   width: 150px; /* Set your desired width */
   height: auto; /* Maintain aspect ratio */
   padding-left: 20px;
@@ -532,7 +572,7 @@ nav.solutek_menu span {
 .header-btn a {
   display: inline-block;
   font-size: 15px;
- 
+
   text-transform: uppercase;
   color: #51ade5;
   font-weight: 600;
@@ -578,7 +618,7 @@ nav.solutek_menu span {
 }
 
 .hero-contant h5 {
-  font-size: .8rem;
+  font-size: 0.8rem;
   color: #ffffff;
   font-weight: normal;
   font-family: "Poppins";
@@ -607,7 +647,6 @@ nav.solutek_menu span {
 .hero-contant .subtitle img {
   margin-right: 5px;
 }
-
 
 .hero-contant h1 {
   font-size: 55px;
@@ -689,7 +728,11 @@ nav.solutek_menu span {
   z-index: 1;
 }
 
-.hero-thumb::before {
+.hero-image {
+  position: relative; /* Tambahkan ini */
+}
+
+.hero-image::before {
   position: absolute;
   content: "";
   height: 100%;
@@ -697,7 +740,7 @@ nav.solutek_menu span {
   background: url(assets/images/hero/blakang-hero.png);
   background-repeat: no-repeat;
   z-index: -1;
-  right: -10%;
+  right: -15%;
   top: -25%;
   -webkit-animation-name: rotateme;
   -webkit-animation-duration: 15s;
@@ -708,11 +751,25 @@ nav.solutek_menu span {
   background-position: center;
 }
 
+.hero-image .mobile-image {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .hero-image .desktop-image {
+    display: none;
+  }
+
+  .hero-image .mobile-image {
+    display: block;
+  }
+}
+
 /*=====================================
 <--  end solutek hero Area Css -->
 =======================================*/
-
-
 
 /*=====================================
 <-- 03.start solutek feature Area Css -->
@@ -867,8 +924,6 @@ p.feature-text {
 <--  end solutek feature Area Css -->
 =======================================*/
 
-
-
 /*==============================================
 <-- 04.start solutek section-title Area Css -->
 ================================================*/
@@ -887,18 +942,15 @@ h5.section-sub-title {
   font-weight: 600;
   font-family: "Poppins";
   border-radius: 20px;
-  background-color: rgba(255, 60, 0, 0.03137254901960784);
-  border: 1px solid rgba(122, 122, 122, 0.15);
   display: inline-block;
-  padding: 6px 29px;
+  padding: 5px;
   margin: 0;
   position: relative;
   z-index: 1;
-  margin-bottom: 22px;
   line-height: 25px;
 }
 
-h5.section-sub-title::before {
+/* h5.section-sub-title::before {
   position: absolute;
   content: "";
   width: 30px;
@@ -907,7 +959,7 @@ h5.section-sub-title::before {
   border-radius: 30px;
   left: -8%;
   top: 14px;
-}
+} */
 
 h1.section-main-title {
   font-size: 42px;
@@ -924,9 +976,8 @@ h1.section-main-title span {
 }
 
 p.section-title-descr {
-  width: 84%;
+  text-align: justify;
   margin: 0;
-  padding: 19px 0 25px;
 }
 
 p.section-descr {
@@ -958,7 +1009,6 @@ p.section-descr::before {
 }
 
 .testimonial-area h5.section-sub-title {
-  background-color: #161a2b;
   border: 2px solid #40465d;
 }
 
@@ -977,8 +1027,6 @@ p.section-descr::before {
 
 .contact-area h5.section-sub-title {
   margin-bottom: 14px;
-  background-color: #f4f4f4;
-  border: 2px solid #ffffff;
 }
 
 /* section title home three */
@@ -997,7 +1045,7 @@ h6.section-sub-title {
 
 h6.section-sub-title::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 70px;
   height: 2px;
   background-image: linear-gradient(270deg, #ffffff 0%, #51ade5 100%);
@@ -1007,7 +1055,7 @@ h6.section-sub-title::before {
 
 h6.section-sub-title::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 70px;
   height: 2px;
   background-image: linear-gradient(270deg, #51ade5 0%, #ffffff 100%);
@@ -1017,7 +1065,7 @@ h6.section-sub-title::after {
 
 h1.section-main-title2 {
   font-size: 45px;
-  line-height:55px;
+  line-height: 55px;
   text-transform: uppercase;
   color: #050a1e;
   font-weight: 600;
@@ -1025,7 +1073,7 @@ h1.section-main-title2 {
 }
 
 .about-section h6.section-sub-title {
-  margin-left:70px;
+  margin-left: 70px;
 }
 
 .about-section h6.section-sub-title::before {
@@ -1081,7 +1129,7 @@ h1.section-main-title2 {
 }
 
 .faq-area.style-two h6.section-sub-title {
-  margin-left:70px;
+  margin-left: 70px;
 }
 
 .faq-area.style-two h6.section-sub-title::before {
@@ -1093,12 +1141,9 @@ h1.section-main-title2 {
   display: none;
 }
 
-
 /*=====================================
 <--  end solutek section-title Area Css -->
 =======================================*/
-
-
 
 /*=====================================
 <-- 05.start solutek contact Area Css -->
@@ -1113,8 +1158,7 @@ h1.section-main-title2 {
   position: relative;
 }
 
-.contact-area
-.form_box input {
+.contact-area .form_box input {
   border: 1px solid rgba(122, 122, 122, 0.5);
   height: 60px;
   border-radius: 15px;
@@ -1235,7 +1279,6 @@ h1.section-main-title2 {
 /*=====================================
 <--  end solutek contact Area Css -->
 =======================================*/
-
 
 /*=====================================
 <-- 06. start solutek blog Area Css -->
@@ -1449,10 +1492,6 @@ h3.blog-title-two a:hover {
 <--  start solutek blog Area Css -->
 =======================================*/
 
-
-
-
-
 /*=====================================
 <--  start solutek about Area Css -->
 =======================================*/
@@ -1468,8 +1507,9 @@ h3.blog-title-two a:hover {
   content: "";
   height: 100%;
   width: 100%;
-  background: url(assets/images/about5.png);
+  background: url(assets/images/);
   background-repeat: no-repeat;
+  background-size: contain;
   right: -72%;
   top: -8%;
 }
@@ -1478,6 +1518,30 @@ h3.blog-title-two a:hover {
   position: relative;
   z-index: 1;
   margin-left: -96px;
+  max-width: 100%;
+  height: auto;
+}
+
+.about-thumb img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 991px) {
+  .about-thumb {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .about-thumb img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-thumb img {
+    max-width: 100%;
+  }
 }
 
 h4.about-title {
@@ -1492,30 +1556,8 @@ h4.about-title {
   margin: 0;
 }
 
-.about-shape {
-  position: absolute;
-  top: 20%;
-  right: 44%;
-}
-
-.about-shape img {
-  animation: dance 3s alternate infinite;
-  -webkit-animation: dance 2s alternate infinite;
-  animation: dance 3s alternate infinite;
-}
-
-.about-icon {
-  width: 50px;
-  height: 60px;
-  border-radius: 10px;
-  background-color: #f4f4f4;
-  line-height: 60px;
-  margin-right: 14px;
-  text-align: center;
-}
-
 .about-icon img {
-  margin-left:-22px;
+  margin-left: -22px;
 }
 
 .about-tiltle h3 {
@@ -1528,9 +1570,8 @@ h4.about-title {
 }
 
 .about-text p {
-  width: 92%;
+ text-align: justify;
   margin: 0;
-  padding: 16px 0 41px;
 }
 
 /* button style */
@@ -1555,7 +1596,7 @@ h4.about-title {
 }
 
 .hero-area.style-three .solutek-btn a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .solutek-hover-btn {
@@ -1619,15 +1660,8 @@ h4.about-title {
   border-radius: 30px;
 }
 
-
 .btn-2:hover {
-  background-image: linear-gradient(
-    90deg,
-    #51ade5 0%,
-    #ffcf00 49%,
-    #a52600 80%,
-    #51ade5 100%
-  );
+  background-image: linear-gradient(90deg, #51ade5 0%, #ffcf00 49%, #a52600 80%, #51ade5 100%);
   animation: slidebg 5s linear infinite;
   color: #fff;
 }
@@ -1640,8 +1674,6 @@ h4.about-title {
 /*=====================================
 <--  end solutek about Area Css -->
 =======================================*/
-
-
 
 /*=====================================
 <--  start solutek service Area Css -->
@@ -1669,8 +1701,9 @@ h4.about-title {
   content: "";
   height: 100%;
   width: 100%;
-  background: url(assets/images/service6.png);
+  background: url(assets/images/about/hover.png);
   background-repeat: no-repeat;
+  border-radius: 15px;
   background-size: cover;
   background-position: center;
   left: 0;
@@ -1685,8 +1718,11 @@ h4.about-title {
 }
 
 .service-icon img {
+  width: 50px;
+  height: 50px;
   filter: brightness(1) invert(0);
   transition: 0.5s;
+  filter: sepia(1) saturate(5) hue-rotate(190deg); /* Mengubah warna gambar */
 }
 
 h3.service-title {
@@ -1709,7 +1745,7 @@ p.service-text {
   display: inline-block;
   font-size: 15px;
   line-height: 26px;
-  color: #ffff;
+  color: #000000;
   font-weight: 600;
   text-decoration: none;
 }
@@ -1729,14 +1765,7 @@ p.service-text {
 }
 
 .service-single-box:hover::before {
-  clip-path: polygon(
-    25% -70%,
-    75% -70%,
-    120% 50%,
-    75% 170%,
-    25% 170%,
-    -20% 50%
-  );
+  clip-path: polygon(25% -70%, 75% -70%, 120% 50%, 75% 170%, 25% 170%, -20% 50%);
 }
 
 .service-single-box:hover .service-icon img {
@@ -1753,7 +1782,10 @@ p.service-text {
 
 .service-single-box:hover .service-btn i {
   color: #fff;
-  background: #ff6d3e;
+  background: var(--primary-color);
+}
+.service-single-box:hover .service-btn a {
+  color: #fff;
 }
 
 .service-shape {
@@ -1764,7 +1796,7 @@ p.service-text {
 
 .service-shape2 {
   position: absolute;
-  top: 16%;
+  top: 5%;
   left: 3%;
 }
 
@@ -2295,7 +2327,6 @@ a.active {
 <--  end solutek faq-area Css -->
 =======================================*/
 
-
 /*=====================================
 <--  start solutek testimonial-area Css -->
 =======================================*/
@@ -2401,8 +2432,6 @@ ul.testi-rating li {
 /*=====================================
 <--  end solutek testimonial-area Css -->
 =======================================*/
-
-
 
 /*
 <!-- ==========================================-->
@@ -2628,8 +2657,6 @@ ul.testi-rating li {
   display: none;
 }
 
-
-
 /*---=====================================================
    <!-- Start solutek testimonial Area style-four-->
 =========================================================---*/
@@ -2655,7 +2682,7 @@ ul.testi-rating li {
 
 .testimonial-area.style-four h4.testi-user-name::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 36px;
   height: 2px;
   background-image: linear-gradient(270deg, #51ade5 0%, #ffffff 100%);
@@ -2665,11 +2692,11 @@ ul.testi-rating li {
 
 .testimonial-area.style-four h4.testi-user-name::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 36px;
   height: 2px;
   background-image: linear-gradient(270deg, #ffffff 0%, #51ade5 100%);
-  right:13px;
+  right: 13px;
   bottom: 13px;
 }
 
@@ -2702,7 +2729,7 @@ ul.testi-rating li {
 .testimonial-area.style-four .testimonial-single-box {
   padding: 35px 40px 15px 40px;
   border-radius: 20px;
-  background-color: rgba(244,244,244,0.5019607843137255);
+  background-color: rgba(244, 244, 244, 0.5019607843137255);
   border: 2px solid #ffffff;
 }
 
@@ -2721,7 +2748,8 @@ ul.testi-rating li {
   justify-content: space-between;
 }
 
-.testimonial-area.style-four .testi-review-user h3, .testi-review-user h3 span {
+.testimonial-area.style-four .testi-review-user h3,
+.testi-review-user h3 span {
   font-size: 16px;
   text-transform: uppercase;
   color: #050a1e;
@@ -2756,7 +2784,7 @@ ul.testi-rating li {
 .testimonial-area.style-four .testi-quote-icon::before {
   position: absolute;
   content: "";
-  opacity: 0.200;
+  opacity: 0.2;
   width: 370px;
   height: 2px;
   background-image: linear-gradient(270deg, #f3f3f3 0%, #797979 100%);
@@ -2794,9 +2822,6 @@ ul.testi-rating li {
   bottom: 72px;
 }
 
-
-
-
 /*=====================================
 <--  start solutek address-area Css -->
 =======================================*/
@@ -2816,7 +2841,8 @@ ul.testi-rating li {
   margin: 0;
 }
 
-.address-box, .address-box2 {
+.address-box,
+.address-box2 {
   display: flex;
   align-items: center;
 }
@@ -3064,8 +3090,6 @@ p.newsletter-text {
 /*=====================================
 <--  end solutek footer-area Css -->
 =======================================*/
-
-
 
 /*=====================================
 <-- start solutek Home two Css -->
@@ -4261,7 +4285,6 @@ ul.list-style-one li a:hover {
   top: -118px;
 }
 
-
 /*
 <!-- ==========================================-->
 <!-- start solutek project-area styl-three -->
@@ -4568,7 +4591,6 @@ ul.list-style-one li a:hover {
 
 /* <!--solutek home page three Css--> */
 
-
 /*---=====================================================
    <!--solutek top header area Css-->
 =========================================================---*/
@@ -4622,9 +4644,9 @@ ul.list-style-one li a:hover {
   text-align: center;
 }
 
-.top-header-social-icon ul li i:hover{
+.top-header-social-icon ul li i:hover {
   background-color: #51ade5;
-  color:#fff;
+  color: #fff;
 }
 
 /*solutek home page 03 css 
@@ -4825,7 +4847,7 @@ ul.list-style-one li a:hover {
   left: 55px;
 }
 
-.hero-active .owl-next{
+.hero-active .owl-next {
   font-size: 16px;
   line-height: 28px;
   color: #f4f4f4;
@@ -4838,7 +4860,6 @@ ul.list-style-one li a:hover {
   position: absolute;
   bottom: 190px;
   left: 55px;
-
 }
 
 .hero-active {
@@ -4847,7 +4868,7 @@ ul.list-style-one li a:hover {
 
 .hero-active .owl-prev::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 2px;
   height: 166px;
   background-image: linear-gradient(0deg, #51ade5 0%, #05091d 100%);
@@ -4857,7 +4878,7 @@ ul.list-style-one li a:hover {
 
 .hero-active .owl-prev::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 2px;
   height: 166px;
   background-image: linear-gradient(0deg, #05091d 0%, #51ade5 100%);
@@ -4876,7 +4897,7 @@ ul.list-style-one li a:hover {
   background-size: cover;
 }
 
-.our-service-section .service-box{
+.our-service-section .service-box {
   position: relative;
 }
 .our-service-section .single-service-box {
@@ -4909,7 +4930,7 @@ ul.list-style-one li a:hover {
 }
 
 .our-service-section h4.service-title:hover {
-  color:#51ade5
+  color: #51ade5;
 }
 
 .our-service-section h4.service-title::before {
@@ -4973,7 +4994,7 @@ ul.list-style-one li a:hover {
 
 .about-section .about-item-list ul li::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 45px;
   height: 2px;
   background-image: linear-gradient(270deg, #ffffff 0%, #51ade5 100%);
@@ -5005,7 +5026,7 @@ ul.list-style-one li a:hover {
 
 .counter-area .counter-single-box::before {
   position: absolute;
-  content: '';
+  content: "";
   opacity: 0.302;
   width: 2px;
   height: 90px;
@@ -5014,7 +5035,8 @@ ul.list-style-one li a:hover {
   right: -16px;
 }
 
-.counter-area .counter-content h4, .counter-content span {
+.counter-area .counter-content h4,
+.counter-content span {
   display: inline-block;
   font-size: 40px;
   line-height: 28px;
@@ -5055,7 +5077,7 @@ ul.list-style-one li a:hover {
   border-radius: 25px;
   padding: 34px 80px;
   margin-bottom: 25px;
-  background: linear-gradient(to bottom, #161A2B, #131729, #05091D);
+  background: linear-gradient(to bottom, #161a2b, #131729, #05091d);
 }
 
 .case-studies-content h4 a {
@@ -5117,9 +5139,9 @@ ul.list-style-one li a:hover {
   transition: 0.5s;
 }
 
-.case-studies-btn a:hover{
+.case-studies-btn a:hover {
   background: #fff;
-  color:#51ade5;
+  color: #51ade5;
 }
 
 .case-studies-single-box {
@@ -5139,7 +5161,7 @@ ul.list-style-one li a:hover {
   content: "";
   width: 0;
   height: 100%;
-  background-image: linear-gradient(180deg, rgba(255,60,0,0) 37%, rgba(255,60,0,0.9999999999999999) 100%);
+  background-image: linear-gradient(180deg, rgba(255, 60, 0, 0) 37%, rgba(255, 60, 0, 0.9999999999999999) 100%);
   bottom: 0;
   right: 0;
   transition: 0.5s;
@@ -5174,7 +5196,7 @@ ul.list-style-one li a:hover {
 
 .case-studie-content h6::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 50px;
   height: 2px;
   background-image: linear-gradient(270deg, #05091d 0%, #51ade5 100%);
@@ -5201,23 +5223,22 @@ ul.list-style-one li a:hover {
 }
 
 /* all hover case studies */
-.case-studies-single-box:hover .case-studies-thumb::before{
+.case-studies-single-box:hover .case-studies-thumb::before {
   width: 100%;
   left: 0;
 }
 
-.case-studies-single-box:hover .case-studie-content h6{
-  color:#fff;
+.case-studies-single-box:hover .case-studie-content h6 {
+  color: #fff;
 }
 
-.case-studies-single-box:hover .case-studie-content h6::before{
+.case-studies-single-box:hover .case-studie-content h6::before {
   background-image: linear-gradient(270deg, #51ade5 0%, #ffffff 100%);
 }
 
-.case-studies-single-box:hover .case-studies-icon{
+.case-studies-single-box:hover .case-studies-icon {
   background: #050a1e;
 }
-
 
 /*---=====================================================
    <!--start solutek working proces area -->
@@ -5298,13 +5319,13 @@ ul.list-style-one li a:hover {
   font-size: 22px;
   color: #fff;
   background-color: #51ade5;
-  transition: .5s;
+  transition: 0.5s;
   text-align: center;
 }
 
 .process-content h4 {
   margin: 20px 0 10px;
-  transition: .5s;
+  transition: 0.5s;
   font-size: 20px;
   line-height: 36px;
   color: #050a1e;
@@ -5320,7 +5341,8 @@ ul.list-style-one li a:hover {
   transition: 0.5s;
 }
 
-.working-process-bottom p, .working-process-bottom p span {
+.working-process-bottom p,
+.working-process-bottom p span {
   font-size: 17px;
   line-height: 50px;
   color: #7a7a7a;
@@ -5330,8 +5352,8 @@ ul.list-style-one li a:hover {
   padding-top: 28px;
 }
 
-.working-process-bottom p span{
-  color:#51ade5;
+.working-process-bottom p span {
+  color: #51ade5;
 }
 
 /*---=====================================================
@@ -5437,7 +5459,6 @@ li.list-arrow {
   font-family: "Fira Sans";
   cursor: pointer;
 }
-
 
 /* <!--==================================================-- */
 /* <!--start solutek about us Area -- */
@@ -6750,7 +6771,7 @@ li.current_menu_item {
   line-height: 46px;
   color: #050a1e;
   font-weight: 600;
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
 }
 
 .project-details-box {
@@ -6828,12 +6849,12 @@ a.project-details-text {
   overflow: hidden;
 }
 
-.blog-area.style-grid  .single-blog-thumb img {
+.blog-area.style-grid .single-blog-thumb img {
   width: 100%;
   transition: 0.5s;
 }
 
-.blog-area.style-grid  .blog-box-content {
+.blog-area.style-grid .blog-box-content {
   padding: 25px 20px 5px 10px;
 }
 
@@ -6911,15 +6932,15 @@ a.project-details-text {
 }
 
 /* all hover grid */
-.blog-area.style-grid .blog-box-content h3 a:hover{
-  color:#51ade5;
+.blog-area.style-grid .blog-box-content h3 a:hover {
+  color: #51ade5;
 }
 
-.blog-area.style-grid .blog-button:hover a{
-  color:#fff;
+.blog-area.style-grid .blog-button:hover a {
+  color: #fff;
 }
 
-.blog-area.style-grid .blog-button a:hover::before{
+.blog-area.style-grid .blog-button a:hover::before {
   transform: scale(1);
 }
 
@@ -7499,8 +7520,6 @@ p.blog-details-desc.three {
   }
 }
 
-
-
 /*===========================
 <-- corporate Bounce Animation Css -->
 =============================*/
@@ -7869,16 +7888,12 @@ p.blog-details-desc.three {
 }
 @-webkit-keyframes ripple-red {
   0% {
-    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3),
-      0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3);
-    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3),
-      0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3);
   }
   100% {
-    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3),
-      0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0);
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3),
-      0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(212, 90, 219, 0);
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(212, 90, 219, 0);
   }
 }
 
