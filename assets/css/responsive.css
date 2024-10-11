@@ -3571,7 +3571,7 @@
   }
   /* default */
   .text-judul-white {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
     color: #ffffff;
     font-weight: 700;
@@ -3579,7 +3579,7 @@
     margin: 0;
   }
   .text-judul-black {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.5rem;
     color: #2c2c2c;
     font-weight: 700;
@@ -3670,7 +3670,6 @@
   }
 
   .project-right {
-    text-align: left;
     margin-top: -40px;
     margin-bottom: 20px;
   }

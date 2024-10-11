@@ -612,16 +612,16 @@ nav.solutek_menu span {
 
 /* deafult */
 .text-judul-white {
-  font-size: 3rem;
-  line-height: 70px;
+  font-size:2.5rem;
+  line-height: 3.3rem;
   color: #ffffff;
   font-weight: 700;
   font-family: "Poppins";
   margin: 0;
 }
 .text-judul-black {
-  font-size: 3rem;
-  line-height: 70px;
+  font-size: 2.5rem;
+  line-height: 3.3rem;
   color: #2c2c2c;
   font-weight: 700;
   font-family: "Poppins";
@@ -812,13 +812,7 @@ nav.solutek_menu span {
   padding: 13px 0 43px;
 }
 
-.hero-area .solutek-hover-btn {
-  background-color: #ffff;
-}
 
-.hero-area .solutek-btn a:hover {
-  color: var(--secondary-color);
-}
 
 .hero-video-icon {
   display: inline-block;
@@ -919,7 +913,7 @@ nav.solutek_menu span {
 =======================================*/
 
 .feature-area {
-  padding: 0 0 88px;
+  padding: 0 0 1rem;
   margin-top: -60px;
 }
 
@@ -1072,7 +1066,7 @@ p.feature-text {
 ================================================*/
 
 .section-title.text-center {
-  margin-bottom: 45px;
+  margin-bottom: 1rem;
 }
 
 .section-title.text-left {
@@ -1127,6 +1121,8 @@ p.section-descr {
   margin: 0;
   position: relative;
   z-index: 1;
+  text-transform: capitalize;
+  font-size: 1.2rem;
 }
 
 p.section-descr::before {
@@ -1640,7 +1636,7 @@ h3.blog-title-two a:hover {
 =======================================*/
 
 .about-area {
-  padding: 0 0 120px;
+  padding: 0 0 2rem;
   position: relative;
   z-index: 1;
 }
@@ -1729,13 +1725,21 @@ h4.about-title {
   text-decoration: none;
   padding: 16px 28px;
   font-size: 15px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #ffffff;
   font-weight: 600;
   position: relative;
   z-index: 1;
   border-radius: 30px;
   transition: 0.5s;
+}
+.white-bg .solutek-hover-btn {
+  background-color: #ffff;
+  
+}
+
+.white-bg.solutek-btn a:hover {
+  color: var(--secondary-color);
 }
 
 .solutek-btn a:hover {
@@ -1825,7 +1829,7 @@ h4.about-title {
 
 .sservice-area {
   background: #f4f4f4;
-  padding: 120px 0 88px;
+  padding: 1rem 0;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -1965,7 +1969,7 @@ p.service-text {
 =======================================*/
 
 .project-area {
-  padding: 120px 0 88px;
+  padding: 1rem 0 0;
   background: ;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1988,7 +1992,7 @@ p.service-text {
   position: relative;
   z-index: 1;
   text-align: right;
-  margin-top: -81px;
+  margin-top: 3rem;
 }
 
 .project-right::before {
@@ -2110,22 +2114,30 @@ p.project-text:hover::before {
 =======================================*/
 
 .brand-area {
-  background: #51ade5;
-  padding: 41px 0;
-  margin: 0 49px 0;
-  left: 0;
-  right: 0;
-  border-radius: 0 0 50px 50px;
+    background: #f9f9f9; /* Light background for modern look */
+    padding: 2rem 0; /* Increased padding for better spacing */
+    margin: 0 49px;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .brand-box {
-  text-align: center;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth transform on hover */
 }
 
+
+.brand-thumb img {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+
+/* Owl Carousel specific styles */
 .owl-carousel .owl-item img {
-  display: inline;
+    display: inline;
 }
-
 /*=====================================
 <--  end solutek brand Area Css -->
 =======================================*/
@@ -2135,7 +2147,7 @@ p.project-text:hover::before {
 =======================================*/
 
 .pricing-area {
-  padding: 120px 0 88px;
+  padding: 4rem 0 2rem;
 }
 
 .pricing-single-box {
@@ -2144,7 +2156,7 @@ p.project-text:hover::before {
 }
 
 .pricing-head {
-  background: #fff5f3;
+  background: var(--primary-color);
   padding: 47px 0 36px;
   margin-bottom: 5px;
   border-radius: 15px 40px 15px 15px;
@@ -2156,7 +2168,7 @@ p.project-text:hover::before {
   position: absolute;
   content: "";
   width: 85%;
-  border: 1px dashed;
+  border: 1px dashed #51ade5;
   height: 80%;
   border-radius: 15px 40px 15px 15px;
   left: 24px;
@@ -2167,8 +2179,8 @@ p.project-text:hover::before {
   position: absolute;
   content: "";
   height: 100%;
-  width: 0;
-  background: url(assets/images/pricing2.png);
+  width: 100%; /* Set width to 100% to make the background visible */
+  background-image: url(assets/images/pricing/pembuatan\ website.png); /* Only the image */
   right: 0;
   top: 0;
   z-index: -1;
@@ -2176,19 +2188,36 @@ p.project-text:hover::before {
   background-position: center;
   background-size: cover;
   transition: 0.5s;
+  opacity: 0; /* Start with opacity 0 */
 }
 
-h1.priching-doller {
-  font-size: 45px;
-  color: #51ade5;
+.pricing-single-box:hover .pricing-head:after {
+  opacity: 1; /* Make the image visible on hover */
+}
+
+.pricing-single-box:hover .pricing-head:before {
+  background: rgba(0, 0, 0, 0.5); /* Black gradient overlay with transparency */
+  width: 100%; /* Ensure it covers the entire area */
+  height: 100%; /* Ensure it covers the entire area */
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 0; /* Ensure it is below the content */
+}
+.priching-doller {
+  position: relative;
+  font-size: 1rem;
+  color: #fff;
   font-weight: 600;
   font-family: "Poppins";
   margin: 0;
   line-height: 26px;
   transition: 0.5s;
+  z-index: 11;
 }
 
-h3.priching-title {
+.priching-title {
+  position: relative;
   font-size: 20px;
   line-height: 26px;
   color: #041424;
@@ -2197,6 +2226,7 @@ h3.priching-title {
   margin: 0;
   margin-top: 21px;
   transition: 0.5s;
+  z-index: 11;
 }
 
 .pricing-body {
@@ -2222,41 +2252,44 @@ h3.priching-title {
 
 ul.pricing-list {
   margin-bottom: 35px;
+ 
 }
 
 ul.pricing-list li {
+  display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
   list-style: none;
-  line-height: 48px;
+  line-height: 2rem;
 }
 
 ul.pricing-list li i {
   color: #51ade5;
   font-size: 18px;
-  position: relative;
-  top: 2px;
+  flex-shrink: 0;
   margin-right: 14px;
 }
 
-.pricing-area .solutek-hover-btn {
+/* .pricing-area .solutek-hover-btn {
   background-color: #51ade5;
 }
 
 .pricing-area .solutek-btn a {
-  background: #f5ebe8;
+  background: #fff;
   padding: 16px 55px;
   color: #51ade5;
 }
 
 .pricing-area .solutek-btn a:hover {
   color: #ffff;
-}
+} */
 
 .pricing-single-box:hover .pricing-head:after {
   width: 100%;
   left: 0;
 }
 
-.pricing-single-box:hover h1.priching-doller {
+.pricing-single-box:hover h2.priching-doller {
   color: #fff;
 }
 
@@ -3024,7 +3057,7 @@ ul.testi-rating li {
   background: #050a1e;
   text-decoration: none;
   padding: 16px 28px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   position: relative;
   z-index: 1;
   border-radius: 30px;
@@ -8088,7 +8121,7 @@ p.blog-details-desc.three {
 /* slider servi */
 .service-area {
   background: #f3f7fb;
-  padding: 120px 0 88px;
+  padding: 1rem 0;
   position: relative;
   z-index: 1;
   overflow: hidden;
