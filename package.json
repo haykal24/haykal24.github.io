@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "purgecss": "purgecss --config purgecss.config.js"
+  },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
     "purgecss": "^6.0.0"
   }
 }
