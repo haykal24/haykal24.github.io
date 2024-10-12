@@ -45,8 +45,8 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
 :root {
   hyphens: auto;
   --primary-color: #0d92f4;
-  --secondary-color: #51ade5; /* Updated secondary color */
-  --tertiary-color: #51ade5; /* Updated tertiary color */
+  --secondary-color: #51ade5;
+  --three-color: #3498db; 
   --quaternary-color: #51ade5; /* Updated quaternary color */
   --quinary-color: #51ade5; /* Updated quinary color */
   --senary-color: #51ade5; /* Updated senary color */
@@ -1488,7 +1488,7 @@ h4.about-title {
   display: inline-block;
   background: #51ade5;
   text-decoration: none;
-  padding: 16px 28px;
+  padding: 10px 28px;
   font-size: 15px;
   text-transform: capitalize;
   color: #ffffff;
@@ -1894,166 +1894,279 @@ p.project-text:hover::before {
 =======================================*/
 
 /*=====================================
-<--  start solutek pricing Area Css -->
+<--  Cleeny pricing-area Css -->
 =======================================*/
 
 .pricing-area {
-  padding: 4rem 0 2rem;
+  padding: 110px 0 88px;
 }
 
 .pricing-single-box {
-  text-align: center;
+  background: #F3F4F8;
+  padding: 20px 24px 31px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
   margin-bottom: 30px;
 }
 
-.pricing-head {
-  background: var(--primary-color);
-  padding: 47px 0 36px;
-  margin-bottom: 5px;
-  border-radius: 15px 40px 15px 15px;
-  position: relative;
-  z-index: 1;
+.pricing-single-box.active {
+  background: var(--three-color);
 }
 
-.pricing-head::before {
+.pricing-single-box.active .pricing-head:after {
+  background: var(--three-color);
+  transform: scale(1);
+}
+
+.pricing-single-box.active .pricing-head::before {
+  border-bottom: 24px solid #0740C1;
+}
+
+.pricing-single-box.active h1.pricing-dollar {
+  color: #ffffff;
+}
+
+.pricing-single-box.active h1.pricing-dollar span {
+  color: #ffffff;
+}
+
+.pricing-single-box.active p.pricing-monthly {
+  color: #ffffff;
+}
+
+.pricing-single-box.active .pricing-list ul li {
+  color: #fff;
+}
+
+.pricing-single-box.active .pricing-list ul li i {
+  color: #fff;
+}
+
+
+.pricing-single-box.active h3.pricing-title {
+  border-left: 3px solid #fff;
+}
+
+
+
+.pricing-single-box::before {
   position: absolute;
   content: "";
-  width: 85%;
-  border: 1px dashed #51ade5;
-  height: 80%;
-  border-radius: 15px 40px 15px 15px;
-  left: 24px;
-  top: 16px;
+  height: 100%;
+  width: 0;
+  background: var(--three-color);
+  z-index: -1;
+  right: 0;
+  top: 0;
+  border-radius: 10PX;
+  transition: .5s;
+  opacity: 0;
+}
+
+.pricing-head {
+  text-align: center;
+  background: var(--primary-color);
+  height: 120px;
+  width: 120px;
+  margin: auto;
+  border-radius: 0 10px 10px;
+  padding: 1rem;
+  margin-top: -44px;
+  position: relative;
+  z-index: 1;
 }
 
 .pricing-head:after {
   position: absolute;
   content: "";
   height: 100%;
-  width: 100%; /* Set width to 100% to make the background visible */
-  background-image: url(assets/images/pricing/pembuatan\ website.png); /* Only the image */
-  right: 0;
+  width: 100%;
+  background: ;
+  left: 0;
   top: 0;
   z-index: -1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition: 0.5s;
-  opacity: 0; /* Start with opacity 0 */
+  border-radius: 0 8px 8px;
+  transform: scale(0);
+  transition: .5s;
 }
 
-.pricing-single-box:hover .pricing-head:after {
-  opacity: 1; /* Make the image visible on hover */
+.pricing-head::before {
+  position: absolute;
+  content: "";
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 26px solid transparent;
+  border-left: 24px solid transparent;
+  border-right: 0 solid transparent;
+  transition: .5s;
+  background: radial-gradient(black, transparent);
+  transition: .5s;
+  left: -12px;
+  top: -26px;
+  border-bottom: 24px solid #0740C1;
+  transition: .5s;
 }
-
-.pricing-single-box:hover .pricing-head:before {
-  background: rgba(0, 0, 0, 0.5); /* Black gradient overlay with transparency */
-  width: 100%; /* Ensure it covers the entire area */
-  height: 100%; /* Ensure it covers the entire area */
-  position: absolute; /* Position it absolutely */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  z-index: 0; /* Ensure it is below the content */
-}
-.priching-doller {
-  position: relative;
-  font-size: 1rem;
-  color: #fff;
-  font-weight: 600;
-  font-family: "Poppins";
-  margin: 0;
-  line-height: 26px;
-  transition: 0.5s;
-  z-index: 11;
-}
-
-.priching-title {
-  position: relative;
-  font-size: 20px;
-  line-height: 26px;
-  color: #041424;
-  font-weight: 600;
-  font-family: "Poppins";
-  margin: 0;
-  margin-top: 21px;
-  transition: 0.5s;
-  z-index: 11;
-}
-
-.pricing-body {
+.pricing-head-aktif {
+  text-align: center;
+  background: var(--primary-color);
+  height: 120px;
+  width: 120px;
+  margin: auto;
+  border-radius: 0 10px 10px;
+  padding: 1rem;
+  margin-top: -44px;
   position: relative;
   z-index: 1;
-  padding: 29px 40px 39px;
-  text-align: left;
 }
 
-.pricing-body::before {
+.pricing-head-aktif:after {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  background: url(assets/images/pricing1.png);
+  background: ;
   left: 0;
   top: 0;
   z-index: -1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  border-radius: 0 8px 8px;
+  transform: scale(0);
+  transition: .5s;
 }
 
-ul.pricing-list {
-  margin-bottom: 35px;
- 
+.pricing-head-aktif::before {
+  position: absolute;
+  content: "";
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-top: 26px solid transparent;
+  border-left: 24px solid transparent;
+  border-right: 0 solid transparent;
+  transition: .5s;
+  background: radial-gradient(black, transparent);
+  transition: .5s;
+  left: -12px;
+  top: -26px;
+  border-bottom: 24px solid #0740C1;
+  transition: .5s;
 }
 
-ul.pricing-list li {
-  display: flex;
-        align-items: flex-start;
-        margin-bottom: 10px;
+.pricing-dollar {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "sans-serif";
+  line-height: 15px;
+  margin-bottom: 10px;
+  transition: .5s;
+}
+
+.pricing-dollar span {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Inter";
+  transition: .5s;
+  margin-top: 1rem;
+}
+
+p.pricing-monthly {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Inter";
+  transition: .5s;
+}
+
+.pricing-body {
+  padding: 35px 0 0;
+}
+
+h3.pricing-title {
+  font-size: 22px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-family: "Inter";
+  margin: 0;
+  background: #FFFFFF;
+  margin-left: -24px;
+  display: inline-block;
+  line-height: 28px;
+  border-left: 3px solid var(--three-color);
+  padding: 11px 41px 11px 29px;
+  border-radius: 0 30px 30px  0;
+  transition: .5s;
+}
+
+.pricing-list {
+  padding: 27px 0 25px;
+}
+
+.pricing-list ul li {
   list-style: none;
-  line-height: 2rem;
+  font-size: 15px;
+  color: #3a4268;
+  font-weight: 400;
+  font-family: "Poppins";
+  padding-bottom: 7px;
+  transition: .5s;
+  text-transform: capitalize;
 }
 
-ul.pricing-list li i {
-  color: #51ade5;
-  font-size: 18px;
-  flex-shrink: 0;
-  margin-right: 14px;
+.pricing-list ul li i {
+  display: inline-block;
+  color: #2F6DFF;
+  font-size: 23px;
+  position: relative;
+  top: 4px;
+  margin-right: 7px;
+  transition: .5s
+  ;
 }
-
-/* .pricing-area .solutek-hover-btn {
-  background-color: #51ade5;
-}
-
-.pricing-area .solutek-btn a {
-  background: #fff;
-  padding: 16px 55px;
-  color: #51ade5;
-}
-
-.pricing-area .solutek-btn a:hover {
-  color: #ffff;
-} */
 
 .pricing-single-box:hover .pricing-head:after {
-  width: 100%;
+  transform: scale(1);
+}
+
+.pricing-single-box:hover .pricing-head::before{
+  border-bottom: 24px solid #0740C1;
+}
+
+.pricing-single-box:hover .pricing-dollar{
+  color: #fff;
+}
+
+
+.pricing-single-box:hover .pricing-dollar span{
+  color: #ffffff;
+}
+
+.pricing-single-box:hover p.pricing-monthly{
+  color: #ffffff;
+}
+
+.pricing-single-box:hover::before {
+  opacity: 1;
   left: 0;
+  width: 100%;
 }
 
-.pricing-single-box:hover h2.priching-doller {
+.pricing-single-box:hover h3.pricing-title {
+  background: #fff;
+  border-left: 3px solid #fff;
+}
+
+.pricing-single-box:hover .pricing-list ul li {
   color: #fff;
 }
 
-.pricing-single-box:hover h3.priching-title {
+.pricing-single-box:hover .pricing-list ul li i {
   color: #fff;
-}
-
-.pricing-single-box:hover .pricing-head::before {
-  border: none;
 }
 
 /*=====================================
-<--  end solutek pricing Area Css -->
+<--  end cleeny pricing-area Css -->
 =======================================*/
 
 /*=====================================
