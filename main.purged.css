@@ -1903,7 +1903,7 @@ p.project-text:hover::before {
 
 .pricing-single-box {
   background: #F3F4F8;
-  padding: 20px 24px 31px;
+  padding: 1.25rem 1.5rem 1.5rem;
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -2191,6 +2191,7 @@ h3.pricing-title {
   bottom: 8%;
   left: 0;
   z-index: -1;
+  filter: brightness(0) saturate(100%) invert(55%) sepia(95%) saturate(1095%) hue-rotate(165deg) brightness(96%) contrast(98%);
 }
 
 /*accordion*/
