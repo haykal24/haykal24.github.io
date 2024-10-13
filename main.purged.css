@@ -44,9 +44,9 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
 /* Base Color */
 :root {
   hyphens: auto;
-  --primary-color: #0d92f4;
+  --primary-color: #00a9ff;
   --secondary-color: #51ade5;
-  --three-color: #3498db; 
+  --three-color: #3498db;
   --quaternary-color: #51ade5; /* Updated quaternary color */
   --quinary-color: #51ade5; /* Updated quinary color */
   --senary-color: #51ade5; /* Updated senary color */
@@ -76,7 +76,7 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
 
 /* CSS classes for calling colors in HTML */
 .solutek_nav_manu {
-  padding: 35px 39px 0;
+  padding: 0.5rem 1rem 0;
 }
 /* Kelas untuk efek gradien pada teks */
 .gradient-text-1 {
@@ -473,11 +473,11 @@ nav.solutek_menu span {
   text-align: right;
 }
 .logo .logo-size {
-  width: 150px; /* Set your desired width */
+  width: 8rem; /* Set your desired width */
   height: auto; /* Maintain aspect ratio */
-  padding-left: 20px;
-  padding-bottom: 20px;
+  padding-left: 1.25rem;
 }
+
 .header-btn a {
   display: inline-block;
   font-size: 15px;
@@ -515,12 +515,12 @@ nav.solutek_menu span {
 
 /* deafult */
 .text-judul-white {
-  font-size:2.5rem;
+  font-size: 2.5rem;
   line-height: 3.3rem;
   color: #ffffff;
   font-weight: 700;
   font-family: "Poppins";
-  margin: 0;
+  margin-bottom: 1rem;
 }
 .text-judul-black {
   font-size: 2.5rem;
@@ -528,7 +528,7 @@ nav.solutek_menu span {
   color: #2c2c2c;
   font-weight: 700;
   font-family: "Poppins";
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 .text-sub-judul {
@@ -573,8 +573,8 @@ nav.solutek_menu span {
   background: #51ade5;
   text-decoration: none;
   padding: 7px 35px 7px;
-  font-size: 15px;
-  text-transform: uppercase;
+  font-size: 1rem;
+  text-transform: capitalize;
   color: #ffffff;
   font-weight: 600;
   position: relative;
@@ -651,59 +651,48 @@ nav.solutek_menu span {
 
 .hero-area {
   height: 890px;
-  background-image: url(assets/images/hero/hero-bg.png);
+  background-image: url(assets/images/hero/hero-bg-laptop.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: -78px 50px 0;
+  margin: -120px 0 0;
+}
+.hero-contant {
+  margin-top: -80px;
 }
 
 .hero-contant h5 {
-  font-size: 0.8rem;
+  font-size: 1.3rem;
   color: #ffffff;
   font-weight: normal;
   font-family: "Poppins";
   border-radius: 10px;
-
   border: 1px solid #40465d;
   display: inline-block;
-  padding: 5px 18px;
+  padding: 0.5rem 1rem;
   margin: 0;
   position: relative;
   z-index: 1;
-  margin-bottom: 20px;
+  margin-bottom: 0.5rem;
   line-height: 25px;
 }
 
-/* .hero-contant h5::before {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 7px;
-  background: #51ade5;
-  border-radius: 30px;
-  left: -8%;
-  top: 14px;
-} */
 .hero-contant .subtitle img {
   margin-right: 5px;
 }
 
-.hero-contant p {
-  opacity: 0.702;
-  font-size: 19px;
+.hero-contant .service-item {
+  font-size: 1.1rem;
   line-height: 30px;
   color: #ffffff;
   font-weight: 400;
   font-family: "Poppins";
-  width: 91%;
   margin: 0;
-  padding: 13px 0 43px;
 }
 
 .hero-thumb {
   text-align: right;
-  margin-top: 118px;
+  margin-top: 200px;
   position: relative;
   z-index: 1;
 }
@@ -754,16 +743,15 @@ nav.solutek_menu span {
 /*=====================================
 <-- 03.start solutek feature Area Css -->
 =======================================*/
-
 .feature-area {
   padding: 0 0 1rem;
-  margin-top: -60px;
+  margin-top: -6.5rem;
 }
 
 .feature-box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
+  gap: 2rem;
 }
 
 .feature-sinble-single-box {
@@ -771,7 +759,7 @@ nav.solutek_menu span {
   background-color: #f4f4f4;
   border: 1px solid #e1e1e1;
   text-align: center;
-  padding: 36px 0 32px;
+  padding: 1.5rem 0;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -829,8 +817,8 @@ nav.solutek_menu span {
 } */
 
 .feature-icon {
-  width: 75px;
-  height: 75px;
+  width: 4rem;
+  height: 4rem;
   border-radius: 38px;
   background-color: rgba(255, 255, 255, 0.4);
   border: 2px solid #ffffff;
@@ -860,7 +848,7 @@ nav.solutek_menu span {
 }
 
 h3.feature-title {
-  font-size: 18px;
+  font-size: 1rem;
   color: #050a1e;
   font-weight: 600;
   font-family: "Poppins";
@@ -871,13 +859,14 @@ h3.feature-title {
 }
 
 p.feature-text {
-  font-size: 16px;
+  font-size: 0.8rem;
   line-height: 26px;
   color: #7a7a7a;
   font-weight: 400;
   font-family: "Poppins";
   margin: 0;
   transition: 0.5s;
+  padding: 0 0.5rem 0.5rem;
 }
 
 .feature-sinble-single-box:hover {
@@ -913,7 +902,7 @@ p.feature-text {
 }
 
 .section-title.text-left {
-  margin-bottom: 55px;
+  margin-bottom: 1.5rem;
 }
 
 h5.section-sub-title {
@@ -1424,7 +1413,6 @@ h3.blog-title-two a:hover {
   content: "";
   height: 100%;
   width: 100%;
-  background: url(assets/images/);
   background-repeat: no-repeat;
   background-size: contain;
   right: -72%;
@@ -1481,6 +1469,7 @@ h4.about-title {
 /* button style */
 
 .solutek-btn {
+  margin-top: 1.5rem;
   display: inline-block;
 }
 
@@ -1489,7 +1478,7 @@ h4.about-title {
   background: #51ade5;
   text-decoration: none;
   padding: 10px 28px;
-  font-size: 15px;
+  font-size: 1rem;
   text-transform: capitalize;
   color: #ffffff;
   font-weight: 600;
@@ -1497,10 +1486,10 @@ h4.about-title {
   z-index: 1;
   border-radius: 30px;
   transition: 0.5s;
+  margin-bottom: 1rem;
 }
 .white-bg .solutek-hover-btn {
   background-color: #ffff;
-  
 }
 
 .white-bg.solutek-btn a:hover {
@@ -1635,8 +1624,6 @@ h3.service-title {
 }
 
 p.service-text {
-  margin: 0;
-  padding: 11px 0 38px;
   transition: 0.5s;
 }
 
@@ -1762,7 +1749,7 @@ p.service-text {
 
 .project-content {
   background: var(--primary-color);
-  padding: 33px 0 41px;
+  padding: 0.8rem 0 1rem;
   text-align: center;
   border-radius: 0 0 20px 20px;
 }
@@ -1774,14 +1761,15 @@ h3.project-title {
 
 h3.project-title a {
   display: inline-block;
-  font-size: 22px;
+  font-size: 1rem;
   color: #fefefe;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Poppins";
   margin: 0;
   text-decoration: none;
   transition: 0.5s;
-  margin-bottom: 23px;
+  margin-bottom: 0.5rem;
+  padding: 0 0.3rem;
 }
 
 p.project-text {
@@ -1820,42 +1808,46 @@ p.project-text:hover::before {
 .project-area .owl-dots {
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 0.5rem;
 }
 
-.project-area .owl-dot,
-.owl-dot.active {
+.project-area .owl-dot {
   width: 10px;
   height: 10px;
-  background: #51ade5;
+  background: var(--secondary-color);
   display: inline-block;
   margin-right: 26px;
   border-radius: 50%;
   position: relative;
   z-index: 1;
+  opacity: 0.5; /* Menambahkan opacity untuk dots yang tidak aktif */
+  transition: opacity 0.3s ease; /* Transisi halus saat berubah */
 }
 
-.project-area .owl-dot::before,
-.owl-dot.active::before {
+.project-area .owl-dot::before {
   position: absolute;
   content: "";
   height: 20px;
   width: 20px;
-  border: 1px dashed #fff;
+  border: 1px dashed var(--secondary-color);
   border-radius: 50%;
   left: -5px;
   top: -5px;
+  opacity: 0.5; /* Menambahkan opacity untuk border dots yang tidak aktif */
 }
 
-.project-area .owl-dot.active {
-  background: #fff;
+.project-area .owl-dot.active,
+.project-area .owl-dot:hover {
+  background: var(--primary-color);
   line-height: 10px;
+  opacity: 1; /* Opacity penuh untuk dot aktif atau saat hover */
 }
 
-.project-area .owl-dot.active .owl-dot::before,
-.owl-dot.active::before {
-  border: 1px dashed #fff !important;
+.project-area .owl-dot.active::before,
+.project-area .owl-dot:hover::before {
+  border: 1px dashed var(--primary-color) !important;
+  opacity: 1; /* Opacity penuh untuk border dot aktif atau saat hover */
 }
-
 /*=====================================
 <--  end solutek project Area Css -->
 =======================================*/
@@ -1865,29 +1857,27 @@ p.project-text:hover::before {
 =======================================*/
 
 .brand-area {
-    background: #f9f9f9; /* Light background for modern look */
-    padding: 2rem 0; /* Increased padding for better spacing */
-    margin: 0 49px;
-    border-radius: 0 0 50px 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background: #f9f9f9; /* Light background for modern look */
+  padding: 2rem 0; /* Increased padding for better spacing */
+  margin: 0 49px;
+  border-radius: 0 0 50px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .brand-box {
-    text-align: center;
-    transition: transform 0.3s ease; /* Smooth transform on hover */
+  text-align: center;
+  transition: transform 0.3s ease; /* Smooth transform on hover */
 }
-
 
 .brand-thumb img {
-    width: 100px; /* Set a fixed width */
-    height: 100px; /* Set a fixed height */
-    object-fit: contain; /* Maintain aspect ratio */
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  object-fit: contain; /* Maintain aspect ratio */
 }
-
 
 /* Owl Carousel specific styles */
 .owl-carousel .owl-item img {
-    display: inline;
+  display: inline;
 }
 /*=====================================
 <--  end solutek brand Area Css -->
@@ -1898,11 +1888,12 @@ p.project-text:hover::before {
 =======================================*/
 
 .pricing-area {
-  padding: 110px 0 88px;
+  padding: 1rem 0 1rem;
+  background: #f3f7fb;
 }
 
 .pricing-single-box {
-  background: #F3F4F8;
+  background: #ecedf1;
   padding: 1.25rem 1.5rem 1.5rem;
   border-radius: 10px;
   position: relative;
@@ -1911,7 +1902,7 @@ p.project-text:hover::before {
 }
 
 .pricing-single-box.active {
-  background: var(--three-color);
+  background: var(--primary-color);
 }
 
 .pricing-single-box.active .pricing-head:after {
@@ -1920,7 +1911,7 @@ p.project-text:hover::before {
 }
 
 .pricing-single-box.active .pricing-head::before {
-  border-bottom: 24px solid #0740C1;
+  border-bottom: 24px solid #0740c1;
 }
 
 .pricing-single-box.active h1.pricing-dollar {
@@ -1943,12 +1934,9 @@ p.project-text:hover::before {
   color: #fff;
 }
 
-
 .pricing-single-box.active h3.pricing-title {
   border-left: 3px solid #fff;
 }
-
-
 
 .pricing-single-box::before {
   position: absolute;
@@ -1959,14 +1947,14 @@ p.project-text:hover::before {
   z-index: -1;
   right: 0;
   top: 0;
-  border-radius: 10PX;
-  transition: .5s;
+  border-radius: 10px;
+  transition: 0.5s;
   opacity: 0;
 }
 
 .pricing-head {
   text-align: center;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   height: 120px;
   width: 120px;
   margin: auto;
@@ -1988,7 +1976,7 @@ p.project-text:hover::before {
   z-index: -1;
   border-radius: 0 8px 8px;
   transform: scale(0);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .pricing-head::before {
@@ -1999,17 +1987,17 @@ p.project-text:hover::before {
   border-top: 26px solid transparent;
   border-left: 24px solid transparent;
   border-right: 0 solid transparent;
-  transition: .5s;
+  transition: 0.5s;
   background: radial-gradient(black, transparent);
-  transition: .5s;
+  transition: 0.5s;
   left: -12px;
   top: -26px;
-  border-bottom: 24px solid #0740C1;
-  transition: .5s;
+  border-bottom: 24px solid #0740c1;
+  transition: 0.5s;
 }
 .pricing-head-aktif {
   text-align: center;
-  background: var(--primary-color);
+  background: var(--secondary-color);
   height: 120px;
   width: 120px;
   margin: auto;
@@ -2031,7 +2019,7 @@ p.project-text:hover::before {
   z-index: -1;
   border-radius: 0 8px 8px;
   transform: scale(0);
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .pricing-head-aktif::before {
@@ -2042,13 +2030,13 @@ p.project-text:hover::before {
   border-top: 26px solid transparent;
   border-left: 24px solid transparent;
   border-right: 0 solid transparent;
-  transition: .5s;
+  transition: 0.5s;
   background: radial-gradient(black, transparent);
-  transition: .5s;
+  transition: 0.5s;
   left: -12px;
   top: -26px;
-  border-bottom: 24px solid #0740C1;
-  transition: .5s;
+  border-bottom: 24px solid #0740c1;
+  transition: 0.5s;
 }
 
 .pricing-dollar {
@@ -2058,7 +2046,7 @@ p.project-text:hover::before {
   font-family: "sans-serif";
   line-height: 15px;
   margin-bottom: 10px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .pricing-dollar span {
@@ -2067,7 +2055,7 @@ p.project-text:hover::before {
   color: #ffffff;
   font-weight: 700;
   font-family: "Inter";
-  transition: .5s;
+  transition: 0.5s;
   margin-top: 1rem;
 }
 
@@ -2076,7 +2064,7 @@ p.pricing-monthly {
   color: #ffffff;
   font-weight: 400;
   font-family: "Inter";
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .pricing-body {
@@ -2089,14 +2077,14 @@ h3.pricing-title {
   font-weight: 600;
   font-family: "Inter";
   margin: 0;
-  background: #FFFFFF;
+  background: #ffffff;
   margin-left: -24px;
   display: inline-block;
   line-height: 28px;
   border-left: 3px solid var(--three-color);
   padding: 11px 41px 11px 29px;
-  border-radius: 0 30px 30px  0;
-  transition: .5s;
+  border-radius: 0 30px 30px 0;
+  transition: 0.5s;
 }
 
 .pricing-list {
@@ -2110,39 +2098,37 @@ h3.pricing-title {
   font-weight: 400;
   font-family: "Poppins";
   padding-bottom: 7px;
-  transition: .5s;
+  transition: 0.5s;
   text-transform: capitalize;
 }
 
 .pricing-list ul li i {
   display: inline-block;
-  color: #2F6DFF;
+  color: #2f6dff;
   font-size: 23px;
   position: relative;
   top: 4px;
   margin-right: 7px;
-  transition: .5s
-  ;
+  transition: 0.5s;
 }
 
 .pricing-single-box:hover .pricing-head:after {
   transform: scale(1);
 }
 
-.pricing-single-box:hover .pricing-head::before{
-  border-bottom: 24px solid #0740C1;
+.pricing-single-box:hover .pricing-head::before {
+  border-bottom: 24px solid #0740c1;
 }
 
-.pricing-single-box:hover .pricing-dollar{
+.pricing-single-box:hover .pricing-dollar {
   color: #fff;
 }
 
-
-.pricing-single-box:hover .pricing-dollar span{
+.pricing-single-box:hover .pricing-dollar span {
   color: #ffffff;
 }
 
-.pricing-single-box:hover p.pricing-monthly{
+.pricing-single-box:hover p.pricing-monthly {
   color: #ffffff;
 }
 
@@ -2174,8 +2160,8 @@ h3.pricing-title {
 =======================================*/
 
 .faq-area {
-  background: #f4f4f4;
-  padding: 120px 0 120px;
+  background: #ffffff;
+  padding: 1rem 0 1rem;
   position: relative;
   z-index: 1;
 }
@@ -2184,6 +2170,7 @@ h3.pricing-title {
   position: absolute;
   top: 0;
   left: 0;
+  filter: brightness(0) saturate(100%) invert(55%) sepia(95%) saturate(1095%) hue-rotate(165deg) brightness(96%) contrast(98%);
 }
 
 .faq-shape2 {
@@ -2237,7 +2224,7 @@ ul.accordion {
   cursor: pointer;
   font-weight: 400;
   font-size: 18px;
-  color: #fff !important;
+  color: #b1b2b4 !important;
   z-index: 1;
 }
 
@@ -2293,10 +2280,11 @@ a.active {
 .accordion li a span {
   position: relative;
   z-index: 1;
-  font-size: 18px;
+  font-size: 1rem;
   color: #050a1e;
-  font-weight: 500;
+  font-weight: 400;
   font-family: "Poppins";
+  padding: 0 1rem 0 0;
 }
 
 /*accordion start*/
@@ -2348,7 +2336,7 @@ a.active {
 =======================================*/
 
 .testimonial-area {
-  background: url(assets/images/testi-bg.png);
+  background-color: #f3f7fb;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3845,7 +3833,6 @@ button.icon {
 /*---=====================================================
    <!-- start solutek counter area -->
 =========================================================---*/
-
 
 .counter-content span {
   display: inline-block;
