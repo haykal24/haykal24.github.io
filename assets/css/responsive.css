@@ -279,7 +279,7 @@
     color: #ffffff;
     font-weight: 700;
     font-family: "Poppins";
-    padding-bottom: 0.5rem;
+    padding-bottom: 0;
   }
   .text-judul-black {
     font-size: 1.8rem;
@@ -287,7 +287,25 @@
     color: #2c2c2c;
     font-weight: 700;
     font-family: "Poppins";
-    padding-bottom: 0.5rem;
+    padding-bottom: 0;
+  }
+  .text-judul-white2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .text-judul-black2 {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #2c2c2c;
+    font-weight: 700;
+    font-family: "Poppins";
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   /* hero area */
   .hero-area {
@@ -339,7 +357,14 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
   }
-
+  .pricing-single-box {
+    background: #ecedf1;
+    padding: 1.25rem 1.5rem 1rem;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1 ;
+    margin-bottom: 3.5rem;
+  }
   .about-thumb {
     margin-left: 0;
   }
@@ -376,10 +401,6 @@
 
   .sservice-area .service-single-box {
     padding: 45px 32px 42px;
-  }
-
-  .row.project {
-    padding: 0 20px 0;
   }
 
   .project-right {
@@ -1252,6 +1273,22 @@
     font-family: "Poppins";
     margin-bottom: 0.5rem;
   }
+  .text-judul-white2 {
+    font-size: 2.3rem;
+    line-height: 3.3rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-bottom: 0;
+  }
+  .text-judul-black2 {
+    font-size: 2.3rem;
+    line-height: 3.3rem;
+    color: #2c2c2c;
+    font-weight: 700;
+    font-family: "Poppins";
+    margin-bottom: 0;
+  }
   .hero-contant .service-item {
     font-size: 1rem;
     line-height: 30px;
@@ -1313,7 +1350,14 @@
   .pricing-body {
     padding: 29px 18px 39px;
   }
-
+  .pricing-single-box {
+    background: #ecedf1;
+    padding: 1.25rem 0.330rem 0rem;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1 ;
+  }
+  
   .faq-shape {
     z-index: -1;
   }
@@ -3616,6 +3660,7 @@
 
   .hero-contant {
     margin-left: 20px;
+    margin-top: 3rem;
   }
 
   .hero-contant h1 {
@@ -4399,23 +4444,6 @@
   .sticky .solutek-btn a {
     display: none;
   }
-  /* default */
-  .text-judul-white {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    color: #ffffff;
-    font-weight: 700;
-    font-family: "Poppins";
-    padding-bottom: 0.5rem;
-  }
-  .text-judul-black {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    color: #2c2c2c;
-    font-weight: 700;
-    font-family: "Poppins";
-    padding-bottom: 0.5rem;
-  }
   /* hero area */
   .hero-area {
     height: 1200px;
@@ -4433,7 +4461,7 @@
   }
   .hero-contant {
     margin-left: 10px;
-    margin-top: 1rem;
+    margin-top: 6rem;
   }
 
   .hero-thumb::before {
@@ -4506,7 +4534,7 @@
   }
 
   .row.project {
-    padding: 0 20px 0;
+  
   }
 
   .project-right {
