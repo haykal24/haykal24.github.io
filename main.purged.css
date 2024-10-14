@@ -47,6 +47,7 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
   --primary-color: #00a9ff;
   --secondary-color: #51ade5;
   --three-color: #3498db;
+  --oren: #ff5757;
   --quaternary-color: #51ade5; /* Updated quaternary color */
   --quinary-color: #51ade5; /* Updated quinary color */
   --senary-color: #51ade5; /* Updated senary color */
@@ -80,15 +81,34 @@ Tags:     agency, business, consulting, corporate, cyber security, finance, it a
 }
 /* Kelas untuk efek gradien pada teks */
 .gradient-text-1 {
-  background: linear-gradient(90deg, #ffffff, #51ade5); /* Gradien dari putih ke #51ade5 */
+  background: linear-gradient(45deg, #51ade5, #ff8c42, #ff5757);
+  background-size: 200% auto;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Membuat teks transparan untuk menampilkan gradien */
-  text-shadow: 1px 1px 0 rgba(81, 173, 229, 0.7), /* Bayangan pertama dengan warna #51ade5 */ 2px 2px 0 rgba(81, 173, 229, 0.5), /* Bayangan kedua */ 3px 3px 0 rgba(81, 173, 229, 0.3); /* Bayangan ketiga untuk kedalaman */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: judul 3s linear infinite;
+}
+
+@keyframes judul {
+  to {
+    background-position: 200% center;
+  }
 }
 .gradient-text-light {
-  background: linear-gradient(90deg, #3498db, #68c5ff); /* Gradien dari putih ke #51ade5 */
+  background: linear-gradient(45deg, #51ade5, #ff8c42, #ff5757);
+  background-size: 200% auto;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Membuat teks transparan untuk menampilkan gradien */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .preloader {
@@ -1519,7 +1539,7 @@ h4.about-title {
 }
 
 .solutek-hover-btn {
-  background-color: var(--primary-color);
+  background-color: var(--oren);
   height: 100%;
   top: 0;
   opacity: 0;
@@ -1686,7 +1706,7 @@ p.service-text {
 
 .service-single-box:hover .service-btn i {
   color: #fff;
-  background: var(--primary-color);
+  background: var(--oren);
 }
 .service-single-box:hover .service-btn a {
   color: #fff;
@@ -1714,6 +1734,95 @@ p.service-text {
   position: absolute;
   top: 2%;
   left: 0;
+}
+/* slider servis */
+.service-area {
+  background: #f3f7fb;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.service-single-box {
+  background: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #e0e0e0;
+}
+
+.service-icon {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: transparent;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.service-icon img {
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+}
+
+h3.service-title {
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 10px;
+  line-height: 32px;
+  transition: 0.5s;
+}
+
+p.service-text {
+  color: #666;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.service-btn a {
+  display: inline-block;
+  font-size: 16px;
+
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 20px 6px 6px;
+  border-radius: 24px;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #e0e0e0;
+}
+
+.service-single-box:hover {
+  background: #fff;
+}
+
+.service-single-box:hover .service-icon {
+  border-color: #fff;
+  background: var(--oren);
+  transform: rotate(360deg);
+}
+
+.service-single-box:hover h3.service-title,
+.service-single-box:hover p.service-text {
+  color: #fff;
+}
+
+.service-single-box:hover .service-btn a {
+  background: #fff;
+  color: var(--oren);
+  border-color: #fff;
 }
 
 /*=====================================
@@ -1915,7 +2024,7 @@ p.project-text:hover::before {
   padding: 1.25rem 1.5rem 1rem;
   border-radius: 10px;
   position: relative;
-  z-index: 1 ;
+  z-index: 1;
   margin-bottom: 1.5rem;
 }
 
@@ -1924,12 +2033,13 @@ p.project-text:hover::before {
 }
 
 .pricing-single-box.active .pricing-head:after {
-  background: var(--three-color);
+  background: #b14100;
   transform: scale(1);
 }
 
 .pricing-single-box.active .pricing-head::before {
-  border-bottom: 24px solid #0740c1;
+  border-bottom: 24px solid #b14100;
+  opacity: 0.8;
 }
 
 .pricing-single-box.active h1.pricing-dollar {
@@ -1961,7 +2071,7 @@ p.project-text:hover::before {
   content: "";
   height: 100%;
   width: 0;
-  background: var(--three-color);
+  background: var(--primary-color);
   z-index: -1;
   right: 0;
   top: 0;
@@ -1972,7 +2082,7 @@ p.project-text:hover::before {
 
 .pricing-head {
   text-align: center;
-  background: var(--secondary-color);
+  background: var(--oren);
   height: 120px;
   width: 120px;
   margin: auto;
@@ -2010,12 +2120,12 @@ p.project-text:hover::before {
   transition: 0.5s;
   left: -12px;
   top: -26px;
-  border-bottom: 24px solid #0740c1;
+  border-bottom: 24px solid #b14100;
   transition: 0.5s;
 }
 .pricing-head-aktif {
   text-align: center;
-  background: var(--secondary-color);
+  background: var(--oren);
   height: 120px;
   width: 120px;
   margin: auto;
@@ -2053,7 +2163,7 @@ p.project-text:hover::before {
   transition: 0.5s;
   left: -12px;
   top: -26px;
-  border-bottom: 24px solid #0740c1;
+  border-bottom: 24px solid #b14100;
   transition: 0.5s;
 }
 
@@ -2135,7 +2245,7 @@ h3.pricing-title {
 }
 
 .pricing-single-box:hover .pricing-head::before {
-  border-bottom: 24px solid #0740c1;
+  border-bottom: 24px solid #b14100;
 }
 
 .pricing-single-box:hover .pricing-dollar {
@@ -2188,7 +2298,7 @@ h3.pricing-title {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   z-index: -1;
 }
 .faq-shape2 {
@@ -2283,7 +2393,7 @@ ul.accordion {
   transform: rotate(0deg);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background: #51ade5;
+  background: var(--oren);
   z-index: -1;
 }
 
@@ -2313,7 +2423,7 @@ a.active {
   padding: 16px 20px 16px 30px;
   text-decoration: none;
   border-radius: 15px;
-  background-color: var(--secondary-color);
+  background-color: var(--oren);
   border: 2px solid #dbdbdb;
 }
 
@@ -6342,96 +6452,6 @@ p.blog-details-desc.three {
     -webkit-transform: translateX(-50px);
     transform: translateX(-50px);
   }
-}
-
-/* slider servi */
-.service-area {
-  background: #f3f7fb;
-  padding: 1rem 0;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.service-single-box {
-  background: #fff;
-  border-radius: 30px;
-  padding: 30px;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 30px;
-  transition: all 0.4s ease-in-out;
-  border: 1px solid #e0e0e0;
-}
-
-.service-icon {
-  margin-bottom: 20px;
-  border-radius: 8px;
-  border: 1px solid #e0e0e0;
-  background: transparent;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  text-align: center;
-  transition: all 0.4s ease-in-out;
-}
-
-.service-icon img {
-  width: 40px;
-  height: 40px;
-  transition: 0.5s;
-}
-
-h3.service-title {
-  font-size: 24px;
-  color: #333;
-  font-weight: 700;
-  font-family: "Poppins", sans-serif;
-  margin: 0 0 10px;
-  line-height: 32px;
-  transition: 0.5s;
-}
-
-p.service-text {
-  color: #666;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  margin-bottom: 25px;
-}
-
-.service-btn a {
-  display: inline-block;
-  font-size: 16px;
-
-  font-weight: 600;
-  text-decoration: none;
-  padding: 6px 20px 6px 6px;
-  border-radius: 24px;
-  transition: all 0.4s ease-in-out;
-  border: 1px solid #e0e0e0;
-}
-
-.service-single-box:hover {
-  background: #fff;
-}
-
-.service-single-box:hover .service-icon {
-  border-color: #fff;
-  background: var(--primary-color);
-  transform: rotate(360deg);
-}
-
-.service-single-box:hover h3.service-title,
-.service-single-box:hover p.service-text {
-  color: #fff;
-}
-
-.service-single-box:hover .service-btn a {
-  background: #fff;
-  color: var(--primary-color);
-  border-color: #fff;
 }
 
 /* Swiper Slider Styles */
