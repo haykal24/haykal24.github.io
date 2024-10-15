@@ -81,7 +81,7 @@
     autoplay: true,
     smartSpeed: 1500,
     autoplayTimeout: 2800,
-    dots: true,
+    dots: false,
     nav: false,
     margin: 30,
     navText: ["<i class='bi bi-arrow-right''></i>", "<i class='bi bi-arrow-left''></i>"],
