@@ -9,13 +9,13 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function success() {
     form.reset();
-    status.classList.add("success");
-    status.innerHTML = "Thank you message sent.!";
+    status.classList.add("Berhasil");
+    status.innerHTML = "Terima Kasih, Kami Akan Segera Menanggapi Anda!";
   }
 
   function error() {
-    status.classList.add("error");
-    status.innerHTML = "Oops! There was a problem.";
+    status.classList.add("Gagal");
+    status.innerHTML = "Oops! Ada Kesalahan.";
   }
 
   // handle the form submission event

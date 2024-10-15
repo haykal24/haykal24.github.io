@@ -1094,7 +1094,7 @@ h6.section-sub-title::after {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 120px 0 120px;
+  padding: 1rem 0 1rem;
   position: relative;
 }
 
@@ -1103,7 +1103,6 @@ h6.section-sub-title::after {
   height: 60px;
   border-radius: 15px;
   padding: 0 23px 0;
-  margin-bottom: 21px;
   width: 100%;
   transition: 0.5s;
   font-size: 16px;
@@ -1127,7 +1126,7 @@ h6.section-sub-title::after {
   width: 100%;
   padding: 17px 23px 0;
   height: 150px;
-  margin-bottom: 22px;
+ 
   transition: 0.5s;
   border-radius: 25px;
   font-size: 16px;
@@ -1225,8 +1224,7 @@ h6.section-sub-title::after {
 =======================================*/
 
 .blog-area {
-  padding: 120px 0 89px;
-  background: #f4f4f4;
+  padding: 1rem 0 1rem;
 }
 
 .blog-singele-box {
@@ -1235,7 +1233,7 @@ h6.section-sub-title::after {
 }
 
 .blog-content {
-  background: #ffff;
+  background: var(--bg-dark);
   padding: 58px 40px 35px;
   position: relative;
   z-index: 1;
@@ -1243,7 +1241,7 @@ h6.section-sub-title::after {
 }
 
 .blog-date {
-  background: #fe3c00;
+  background: var(--oren);
   border-radius: 10px;
   padding: 10px 24px;
   position: absolute;
@@ -1255,7 +1253,7 @@ h6.section-sub-title::after {
   line-height: 36px;
   color: #ffffff;
   font-weight: 400;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
   margin: 0;
 }
 
@@ -1294,7 +1292,7 @@ h3.blog-title a {
 }
 
 h3.blog-title a:hover {
-  color: var(--secondary-color);
+  color: #ff3b00;
 }
 
 h3.blog-title {
@@ -1312,13 +1310,13 @@ p.blog-tex {
   line-height: 28px;
   color: #7a7a7a;
   font-weight: 500;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
   text-decoration: none;
   transition: 0.5s;
 }
 
 .blog-btn a:hover {
-  color: var(--secondary-color);
+  color: #ff3b00;
 }
 
 .blog-btn a i {
@@ -1336,9 +1334,9 @@ p.blog-tex {
 }
 
 .blog-content-tow {
-  background: #fff;
+  background: var(--bg-dark);
   border-radius: 20px 20px 20px 20px;
-  padding: 36px;
+  padding: 36px 29px 26px 0;
 }
 
 .blog-thumb-tow {
@@ -1358,14 +1356,14 @@ p.blog-tex {
   line-height: 36px;
   color: #7a7a7a;
   font-weight: 400;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
   margin: 0;
 }
 
 .blog-date-tow h4 i {
   display: inline-block;
   font-size: 16px;
-  color: var(--secondary-color);
+  color: #ff3d00;
   margin-right: 16px;
 }
 
@@ -1381,7 +1379,7 @@ p.blog-tex {
   content: "";
   height: 20px;
   width: 1px;
-  background: var(--secondary-color);
+  background: #ff3d00;
   left: -48px;
   top: 8px;
 }
@@ -1402,7 +1400,7 @@ h3.blog-title-two a {
 }
 
 h3.blog-title-two a:hover {
-  color: var(--secondary-color);
+  color: #ff3b00;
 }
 
 .blog-btn-tow a {
@@ -1411,13 +1409,13 @@ h3.blog-title-two a:hover {
   line-height: 28px;
   color: #7a7a7a;
   font-weight: 500;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
   text-decoration: none;
   transition: 0.5s;
 }
 
 .blog-btn-tow a:hover {
-  color: var(--secondary-color);
+  color: #ff3b00;
 }
 
 .blog-btn-tow a i {
@@ -1431,7 +1429,6 @@ h3.blog-title-two a:hover {
 /*=====================================
 <--  start solutek blog Area Css -->
 =======================================*/
-
 /*=====================================
 <--  start solutek about Area Css -->
 =======================================*/
@@ -1871,7 +1868,7 @@ p.service-text {
   margin-top: 3rem;
 }
 
-.project-right::before {
+/* .project-right::before {
   position: absolute;
   content: "";
   height: 1px;
@@ -1879,7 +1876,7 @@ p.service-text {
   background: #e4e4e4;
   bottom: -52px;
   left: 0;
-}
+} */
 
 .project-thumb img {
   width: 100%;
@@ -2016,6 +2013,9 @@ p.project-text:hover::before {
 /* Owl Carousel specific styles */
 .owl-carousel .owl-item img {
   display: inline;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 /*=====================================
 <--  end solutek brand Area Css -->
@@ -5477,12 +5477,12 @@ a.project-details-text {
   overflow: hidden;
 }
 
-.blog-area.style-grid .single-blog-thumb img {
+.blog-area.style-grid  .single-blog-thumb img {
   width: 100%;
   transition: 0.5s;
 }
 
-.blog-area.style-grid .blog-box-content {
+.blog-area.style-grid  .blog-box-content {
   padding: 25px 20px 5px 10px;
 }
 
@@ -5491,12 +5491,12 @@ a.project-details-text {
   font-size: 15px;
   color: #7a7a7a;
   font-weight: 400;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
 }
 
 .blog-area.style-grid .meta-blog span i {
   display: inline-block;
-  color: var(--secondary-color);
+  color: #ff3c00;
   margin-right: 15px;
 }
 
@@ -5521,7 +5521,7 @@ a.project-details-text {
   line-height: 34px;
   color: #050a1e;
   font-weight: 600;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
   text-decoration: none;
   padding: 22px 0 34px;
   transition: 0.5s;
@@ -5532,7 +5532,7 @@ a.project-details-text {
   font-size: 17px;
   text-transform: uppercase;
   color: #050a1e;
-  font-family: "Poppins";
+  font-family: "Fira Sans";
   border-radius: 22px;
   padding: 10px 30px;
   position: relative;
@@ -5550,7 +5550,7 @@ a.project-details-text {
   content: "";
   height: 100%;
   width: 100%;
-  background: var(--secondary-color);
+  background: #ff3d00;
   left: 0;
   top: 0;
   border-radius: 20px;
@@ -5560,15 +5560,15 @@ a.project-details-text {
 }
 
 /* all hover grid */
-.blog-area.style-grid .blog-box-content h3 a:hover {
-  color: var(--secondary-color);
+.blog-area.style-grid .blog-box-content h3 a:hover{
+  color:#ff3b00;
 }
 
-.blog-area.style-grid .blog-button:hover a {
-  color: #fff;
+.blog-area.style-grid .blog-button:hover a{
+  color:#fff;
 }
 
-.blog-area.style-grid .blog-button a:hover::before {
+.blog-area.style-grid .blog-button a:hover::before{
   transform: scale(1);
 }
 
@@ -5619,12 +5619,12 @@ a.project-details-text {
   height: 2px;
   left: 5px;
   top: 11px;
-  background: var(--secondary-color);
+  background: #ff3b00;
 }
 
 .blog-details-area .meta-blog i {
   display: inline-block;
-  color: var(--secondary-color);
+  color: #ff3b00;
   padding-right: 9px;
 }
 
@@ -5685,7 +5685,7 @@ p.blog-details-desc {
   height: 2px;
   left: -58px;
   top: 12px;
-  background: var(--secondary-color);
+  background: #ff3b00;
 }
 
 h3.blog-details-title {
@@ -5712,7 +5712,7 @@ p.blog-details-desc.two {
 
 .blog-details-list-item ul li i {
   display: inline-block;
-  color: var(--secondary-color);
+  color: #ff3b00;
   font-size: 18px;
   margin-right: 16px;
 }
@@ -5745,12 +5745,12 @@ p.blog-details-desc.three {
 }
 
 .blog-details-category span a:hover {
-  background: var(--secondary-color);
+  background: #ff3b00;
   color: #fff;
 }
 
 .blog-details-category span a.active-class {
-  background: var(--secondary-color);
+  background: #ff3b00;
   color: #fff;
 }
 
@@ -5764,7 +5764,7 @@ p.blog-details-desc.three {
 
 .blog-details-social-icon ul li i {
   display: inline-block;
-  background: var(--secondary-color);
+  background: #ff3b00;
   color: #fff;
   width: 30px;
   height: 30px;
@@ -5841,13 +5841,19 @@ p.blog-details-desc.three {
 }
 
 .blog-details-comment-reply a {
-  background: var(--secondary-color);
+  background: #ff3b00;
   padding: 3px 20px;
   font-size: 14px;
   font-weight: 600;
   color: #fff;
   border-radius: 2px;
   display: inline-block;
+}
+
+.blog-details-comment.reply {
+  margin-left: 70px;
+  padding-top: 35px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .blog-details-contact-title h4 {
@@ -5883,7 +5889,7 @@ p.blog-details-desc.three {
 }
 
 .blog-details-submi-button button {
-  background: var(--secondary-color);
+  background: #ff3b00;
   color: #fff;
   text-transform: uppercase;
   border: transparent;
@@ -5893,13 +5899,13 @@ p.blog-details-desc.three {
   position: relative;
   z-index: 1;
   transition: 0.5s;
-  border: 2px solid var(--secondary-color);
+  border: 2px solid #ff3b00;
   border-radius: 5px;
   font-weight: 500;
 }
 
 .blog-details-submi-button button:hover {
-  color: var(--secondary-color);
+  color: #ff3b00;
 }
 
 .blog-details-submi-button button:before {
@@ -5919,15 +5925,189 @@ p.blog-details-desc.three {
   width: 100%;
   left: 0;
 }
+/*
+<!-- ==========================================-->
+<!-- start solutek blog Area style-two-->
+<!-- =========================================-->*/
+.blog-area.style-two {
+  background: #fff;
+  padding: 120px 0 90px;
+}
+
+.blog-area.style-two h5.section-sub-title {
+  background-color: #ffffff;
+  border: 2px solid #f4f4f4;
+}
+
+.blog-area.style-two .single-blog-box {
+  position: relative;
+  background: url(assets/images/home-two/blog-box.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 30px;
+}
+
+.blog-area.style-two .single-blog-box::before {
+  position: absolute;
+  content: "";
+  width: 155px;
+  height: 3px;
+  background-color: #050a1e;
+  top: -3px;
+  right: 0;
+  z-index: 1;
+  transition: 0.5s;
+}
+.blog-area.style-two .single-blog-box::after {
+  position: absolute;
+  content: "";
+  width: 175px;
+  height: 3px;
+  background-color: #ff3c00;
+  left: 86px;
+  top: -3px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.blog-area.style-two .single-blog-thumb {
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.blog-area.style-two .single-blog-thumb img {
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.blog-area.style-two .blog-meta-top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: 0.5s;
+}
+
+.blog-area.style-two .blog-meta-top a {
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  background: #ff3d00;
+  padding: 7px 19px;
+  border-radius: 20px;
+  font-family: "Fira Sans";
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.blog-area.style-two .blog-box-content {
+  padding: 25px 30px 36px;
+}
+
+.blog-area.style-two .blog-box-content h3 {
+  margin: 0;
+}
+
+.blog-area.style-two .meta-blog a span {
+  display: inline-block;
+  font-size: 15px;
+  color: #7a7a7a;
+  font-weight: 400;
+  font-family: "Fira Sans";
+}
+
+.blog-area.style-two .meta-blog span i {
+  display: inline-block;
+  color: #ff3c00;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px 0 10px 10px;
+  margin-right: 15px;
+}
+
+.blog-area.style-two .meta-blog p {
+  display: inline-block;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+.blog-area.style-two .meta-blog p span {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  background: #fff;
+  text-align: center;
+  border-radius: 10px 0 10px 10px;
+  margin-right: 15px;
+}
+
+.blog-area.style-two .blog-box-content h3 a {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 34px;
+  color: #050a1e;
+  font-weight: 600;
+  font-family: "Fira Sans";
+  text-decoration: none;
+  padding: 22px 0 34px;
+  transition: 0.5s;
+}
+
+.blog-area.style-two .blog-button a {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ff3c00;
+  font-weight: 500;
+  font-family: "Fira Sans";
+  border-radius: 24px;
+  background-color: #ffffff;
+  padding: 8px 32px;
+  transition: 0.5s;
+}
+
+/* blog hover */
+.blog-area.style-two .blog-button a:hover {
+  color: #fff !important;
+}
+
+.blog-area.style-two .blog-meta-top a:hover {
+  background: #fff;
+  color: #ff3b00;
+}
+
+.blog-area.style-two .single-blog-box:hover .blog-box-content a {
+  color: #ff3b00;
+}
+
+.blog-area.style-two .single-blog-box:hover .single-blog-thumb img {
+  transform: scale(1.1);
+}
+
+.blog-area.style-two .single-blog-box:hover:before {
+  width: 100%;
+}
+
+.blog-area.style-two .single-blog-box:hover .blog-meta-top {
+  left: 134px;
+}
+
+.blog-area.style-two .single-blog-box:hover::after {
+  left: 0;
+  right: 0;
+}
+
+/* <!--solutek home page three Css--> */
 
 /*---=====================================================
 <!-- Start solutek google map area -->
 =========================================================---*/
-.google-map iframe {
-  width: 100%;
-  height: 600px;
-}
-
 /*---start-curser---*/
 .curser {
   position: fixed;
@@ -6478,7 +6658,7 @@ p.blog-details-desc.three {
   
 }
 .swiper-pagination-bullet {
-  background: #007bff; /* Change the default bullet color */
+  background: #ff0000; /* Change the default bullet color */
   width: 12px; /* Set the width of the bullets */
   height: 12px; /* Set the height of the bullets */
   border-radius: 50%; /* Make the bullets circular */
