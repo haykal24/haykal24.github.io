@@ -331,10 +331,6 @@
     display: none;
   }
 
-  .hero-contant p {
-    width: 100%;
-  }
-
   .hero-video-icon {
     display: inline-block;
     margin-top: 30px;
@@ -1250,9 +1246,7 @@
     height: 650px;
     margin: -78px 0px 0;
   }
-  .hero-image img.desktop-image {
-    transform: translateX(-25%);
-  }
+
   .hero-image::before {
     right: -7%;
   }
@@ -1274,7 +1268,7 @@
     margin-bottom: 0.5rem;
   }
   .text-judul-white2 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     line-height: 3.3rem;
     color: #ffffff;
     font-weight: 700;
@@ -1282,7 +1276,7 @@
     margin-bottom: 0;
   }
   .text-judul-black2 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     line-height: 3.3rem;
     color: #2c2c2c;
     font-weight: 700;
@@ -1306,7 +1300,7 @@
     margin-top: 50px;
   }
   .hero-thumb img {
-    width: 68%;
+    width: 100%;
   }
   .hero-thumb {
     text-align: right;
@@ -4468,9 +4462,6 @@
     display: none;
   }
 
-  .hero-contant p {
-    width: 100%;
-  }
 
   .hero-video-icon {
     display: inline-block;
