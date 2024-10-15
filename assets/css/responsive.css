@@ -276,6 +276,7 @@
   .text-judul-white {
     font-size: 1.8rem;
     line-height: 2.5rem;
+    justify-content: center;
     color: #ffffff;
     font-weight: 700;
     font-family: "Poppins";
@@ -358,7 +359,7 @@
     padding: 1.25rem 1.5rem 1rem;
     border-radius: 10px;
     position: relative;
-    z-index: 1 ;
+    z-index: 1;
     margin-bottom: 3.5rem;
   }
   .about-thumb {
@@ -1346,12 +1347,12 @@
   }
   .pricing-single-box {
     background: #ecedf1;
-    padding: 1.25rem 0.330rem 0rem;
+    padding: 1.25rem 0.33rem 0rem;
     border-radius: 10px;
     position: relative;
-    z-index: 1 ;
+    z-index: 1;
   }
-  
+
   .faq-shape {
     z-index: -1;
   }
@@ -4455,13 +4456,11 @@
   }
   .hero-contant {
     margin-left: 10px;
-    margin-top: 6rem;
   }
 
   .hero-thumb::before {
     display: none;
   }
-
 
   .hero-video-icon {
     display: inline-block;
@@ -4475,7 +4474,17 @@
   .hero-thumb {
     margin-top: 100px;
   }
-
+  .text-deskripsi {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    text-align: justify;
+    color: hsl(0, 0%, 87%);
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
   .feature-sinble-single-box {
     padding: 36px 12px 32px;
   }
@@ -4525,7 +4534,6 @@
   }
 
   .row.project {
-  
   }
 
   .project-right {
