@@ -1,0 +1,29 @@
+# Node modules
+node_modules/
+
+# Log files
+*.log
+
+# Directory for built assets
+/dist
+
+# Environment files
+.env
+
+# IDE specific files
+.idea/
+*.sublime-workspace
+
+# Dependency directories
+bower_components/
+
+# Build output directory
+/build
+
+# Temp files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+Thumbs.db
