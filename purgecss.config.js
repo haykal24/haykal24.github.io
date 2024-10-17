@@ -1,7 +1,7 @@
 module.exports = {
   content: ["*.html", "**/*.html", "**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
-  css: ["style.css"],
-  output: "main.purged.css",
+  css: ["main.purged.css"],
+  output: "style.css",
   safelist: [
     // Hanya masukkan kelas yang benar-benar digunakan
     /^navbar/,
