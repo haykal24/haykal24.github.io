@@ -3,57 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nusatix — Platform Ticketing Event di Indonesia</title>
-  <meta name="description" content="Buat event, atur kategori tiket, terima pembayaran QRIS & e-wallet, dan pantau penjualan secara real-time. Satu platform untuk semua tiket event-mu." />
+  <title>KARYA — Studio Produk Digital &amp; Brand</title>
+  <meta name="description" content="KARYA merancang dan membangun produk digital yang berdampak: web, aplikasi mobile, dan brand identity. Dari riset sampai rilis." />
 
-  <!-- Favicon: monogram N -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23C6F24E'/><text x='16' y='23' font-family='Arial' font-size='20' font-weight='700' text-anchor='middle' fill='%230A0A0B'>N</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23FF3D2E'/><text x='16' y='23' font-family='Arial Black,Arial' font-size='19' font-weight='900' text-anchor='middle' fill='%230A0C10'>K</text></svg>" />
 
-  <!-- Fonts. NOTE: untuk produksi sebaiknya self-host (lihat README). Google Fonts dipakai di sini agar GitHub Pages langsung jalan tanpa build. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Phosphor icons (icon family tunggal untuk seluruh halaman) -->
   <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
-
-  <!-- Tailwind Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            ink: '#0A0A0B',
-            accent: { DEFAULT: '#C6F24E', soft: '#D8F98A', deep: '#A6D62E' },
+            ink: '#0A0C10',
+            surface: '#12151C',
+            accent: { DEFAULT: '#FF3D2E', deep: '#E02817' },
           },
           fontFamily: {
-            display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['"Archivo"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            sans: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
           },
-          maxWidth: { content: '1200px' },
+          maxWidth: { content: '1280px' },
         },
       },
     };
   </script>
 
   <style>
-    /* Shape scale terkunci: tombol = pill, kartu = rounded-3xl(24px), input = rounded-xl */
+    /* Shape scale: tombol = pill, kartu = rounded-2xl, kontrol bulat = full */
     html { -webkit-font-smoothing: antialiased; }
-    body { background: #0A0A0B; }
-    [id] { scroll-margin-top: 88px; }
+    body { background: #0A0C10; }
+    [id] { scroll-margin-top: 90px; }
 
-    /* Scroll-reveal */
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+    .display { font-family: "Archivo", sans-serif; font-weight: 900; letter-spacing: -0.02em; line-height: 0.95; text-transform: uppercase; }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
     .reveal.in { opacity: 1; transform: none; }
 
-    /* Marquee logo wall */
-    .marquee { display: flex; width: max-content; animation: scroll-x 32s linear infinite; }
-    .marquee-wrap:hover .marquee { animation-play-state: paused; }
+    .marquee { display: flex; width: max-content; animation: scroll-x 28s linear infinite; }
     @keyframes scroll-x { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    /* Grain/glow halus di hero */
-    .hero-glow { background: radial-gradient(60% 60% at 70% 20%, rgba(198,242,78,.14), transparent 70%); }
+    .work-track { scrollbar-width: none; -ms-overflow-style: none; }
+    .work-track::-webkit-scrollbar { display: none; }
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -63,93 +58,243 @@
   </style>
 </head>
 
-<body class="bg-ink text-zinc-200 font-sans antialiased selection:bg-accent selection:text-ink">
+<body class="bg-ink text-zinc-300 font-sans antialiased selection:bg-accent selection:text-white">
 
   <!-- ========================= NAV ========================= -->
   <header id="nav" class="fixed top-0 inset-x-0 z-50 transition-colors duration-300">
-    <nav class="mx-auto max-w-content px-5 lg:px-8 h-[68px] flex items-center justify-between">
+    <nav class="mx-auto max-w-content px-5 lg:px-8 h-[72px] flex items-center justify-between">
       <a href="#" class="flex items-center gap-2.5 shrink-0">
-        <span class="grid place-items-center w-9 h-9 rounded-xl bg-accent text-ink font-display font-bold text-lg">N</span>
-        <span class="font-display font-bold text-lg tracking-tight text-white">Nusatix</span>
+        <span class="grid place-items-center w-9 h-9 rounded-lg bg-accent text-ink display text-lg">K</span>
+        <span class="display text-xl text-white tracking-tight">KARYA</span>
       </a>
 
-      <div class="hidden lg:flex items-center gap-8 text-sm text-zinc-400">
-        <a href="#fitur" class="hover:text-white transition-colors">Fitur</a>
-        <a href="#cara-kerja" class="hover:text-white transition-colors">Cara Kerja</a>
-        <a href="#harga" class="hover:text-white transition-colors">Harga</a>
-        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
+      <div class="hidden lg:flex items-center gap-9 text-sm font-medium text-zinc-400">
+        <a href="#karya" class="hover:text-white transition-colors">Karya</a>
+        <a href="#layanan" class="hover:text-white transition-colors">Layanan</a>
+        <a href="#proses" class="hover:text-white transition-colors">Proses</a>
+        <a href="#kontak" class="hover:text-white transition-colors">Kontak</a>
       </div>
 
       <div class="flex items-center gap-2.5">
-        <a href="#" class="hidden sm:inline-flex text-sm text-zinc-300 hover:text-white px-3 py-2 transition-colors">Masuk</a>
-        <a href="#harga" class="inline-flex items-center gap-1.5 rounded-full bg-accent hover:bg-accent-deep text-ink text-sm font-semibold px-4 py-2.5 transition-colors">
-          Mulai Jual Tiket
+        <span class="hidden sm:grid place-items-center text-xs font-semibold text-zinc-400 border border-zinc-700 rounded-md px-2 py-1">ID</span>
+        <a href="#kontak" class="inline-flex items-center gap-1.5 rounded-full bg-white hover:bg-zinc-200 text-ink text-sm font-semibold px-4 py-2.5 transition-colors">
+          Mulai Proyek
         </a>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- ========================= HERO (split, kiri-rata) ========================= -->
-    <section class="relative overflow-hidden pt-[120px] lg:pt-[140px] pb-20">
-      <div class="hero-glow absolute inset-0 -z-10"></div>
-      <div class="mx-auto max-w-content px-5 lg:px-8 grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+    <!-- ========================= HERO (full-bleed sinematik) ========================= -->
+    <section class="relative min-h-[100dvh] flex items-end overflow-hidden">
+      <!-- TODO: ganti dengan foto/footage tim/studio asli (1600x2000). Picsum = placeholder sinematik. -->
+      <img src="https://picsum.photos/seed/karya-studio-night/1600/2000" alt="Suasana studio kreatif" class="absolute inset-0 w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/30"></div>
+      <div class="absolute inset-0 bg-ink/30 mix-blend-multiply"></div>
+      <div class="absolute inset-0" style="background:radial-gradient(70% 50% at 20% 90%, rgba(255,61,46,.18), transparent 70%)"></div>
 
-        <!-- Copy -->
-        <div class="lg:col-span-6">
-          <span class="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/60 px-3 py-1 text-xs font-medium text-zinc-400">
-            <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
-            Platform ticketing event
+      <div class="relative mx-auto max-w-content w-full px-5 lg:px-8 pb-20 lg:pb-28">
+        <div class="max-w-4xl">
+          <span class="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] text-zinc-400 uppercase">
+            <span class="w-6 h-px bg-accent"></span> Studio produk digital &amp; brand
           </span>
-
-          <h1 class="mt-6 font-display font-bold text-white text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight">
-            Satu platform untuk semua <span class="text-accent">tiket event-mu</span>.
+          <h1 class="display text-white text-[15vw] sm:text-7xl lg:text-8xl mt-5">
+            Rancang.<br />Bangun.<br /><span class="text-accent">Berdampak.</span>
           </h1>
-
-          <p class="mt-5 text-lg text-zinc-400 leading-relaxed max-w-[34ch]">
-            Buat event, atur kategori tiket, terima pembayaran QRIS &amp; e-wallet, dan pantau penjualan secara real-time.
+          <p class="mt-7 text-lg sm:text-xl text-zinc-300 max-w-xl leading-relaxed font-sans">
+            Kami bantu brand dan startup mengubah ide jadi produk digital yang dipakai, dari riset sampai rilis.
           </p>
-
-          <div class="mt-8 flex flex-wrap items-center gap-3">
-            <a href="#harga" class="inline-flex items-center gap-2 rounded-full bg-accent hover:bg-accent-deep text-ink font-semibold px-6 py-3.5 transition-colors active:scale-[0.98]">
-              Mulai Jual Tiket
-              <i class="ph ph-arrow-right text-lg"></i>
+          <div class="mt-9 flex flex-wrap items-center gap-3">
+            <a href="#kontak" class="inline-flex items-center gap-2 rounded-full bg-accent-deep hover:bg-[#C0220F] text-white font-semibold px-6 py-3.5 transition-colors active:scale-[0.98]">
+              Mulai Proyek <i class="ph ph-arrow-up-right text-lg"></i>
             </a>
-            <a href="#cara-kerja" class="inline-flex items-center gap-2 rounded-full border border-zinc-700 hover:border-zinc-500 text-white font-semibold px-6 py-3.5 transition-colors active:scale-[0.98]">
-              <i class="ph ph-play-circle text-lg"></i>
-              Lihat Cara Kerja
+            <a href="#karya" class="inline-flex items-center gap-2 rounded-full border border-zinc-600 hover:border-white text-white font-semibold px-6 py-3.5 transition-colors active:scale-[0.98]">
+              Lihat Karya
             </a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Visual -->
-        <div class="lg:col-span-6 reveal">
-          <div class="relative">
-            <!-- TODO: ganti dengan foto event/konser asli (1200x1400). Picsum dipakai sebagai placeholder stabil. -->
-            <div class="relative rounded-3xl overflow-hidden border border-zinc-800 aspect-[4/5] sm:aspect-[5/4] lg:aspect-[4/5]">
-              <img src="https://picsum.photos/seed/nusatix-festival-crowd/1000/1200" alt="Suasana penonton di sebuah event musik" class="w-full h-full object-cover" loading="eager" />
-              <div class="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent"></div>
-              <div class="absolute inset-0 bg-accent/10 mix-blend-overlay"></div>
+    <!-- ========================= MARQUEE ========================= -->
+    <section class="py-6 bg-accent text-ink overflow-hidden border-y border-accent-deep">
+      <div class="marquee items-center gap-8 display text-2xl sm:text-3xl">
+        <span class="flex items-center gap-8 shrink-0">
+          <span>Product Design</span><i class="ph ph-asterisk"></i><span>Web Development</span><i class="ph ph-asterisk"></i><span>Mobile Apps</span><i class="ph ph-asterisk"></i><span>Brand Identity</span><i class="ph ph-asterisk"></i><span>Strategy</span><i class="ph ph-asterisk"></i>
+        </span>
+        <span class="flex items-center gap-8 shrink-0" aria-hidden="true">
+          <span>Product Design</span><i class="ph ph-asterisk"></i><span>Web Development</span><i class="ph ph-asterisk"></i><span>Mobile Apps</span><i class="ph ph-asterisk"></i><span>Brand Identity</span><i class="ph ph-asterisk"></i><span>Strategy</span><i class="ph ph-asterisk"></i>
+        </span>
+      </div>
+    </section>
 
-              <!-- Status pill: penjualan live -->
-              <div class="absolute top-4 left-4 inline-flex items-center gap-2 rounded-full bg-ink/80 backdrop-blur px-3 py-1.5 text-xs font-medium text-white border border-white/10">
-                <span class="relative flex w-2 h-2">
-                  <span class="absolute inline-flex w-full h-full rounded-full bg-accent opacity-75 animate-ping"></span>
-                  <span class="relative inline-flex w-2 h-2 rounded-full bg-accent"></span>
-                </span>
-                Penjualan live
+    <!-- ========================= KARYA / SHOWCASE (carousel) ========================= -->
+    <section id="karya" class="py-24">
+      <div class="mx-auto max-w-content px-5 lg:px-8">
+        <div class="reveal flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <span class="text-sm font-semibold tracking-[0.18em] text-accent uppercase">Karya Terpilih</span>
+            <h2 class="display text-white text-4xl sm:text-6xl mt-3">Yang sudah<br />kami bangun</h2>
+          </div>
+          <div class="flex gap-3">
+            <button id="work-prev" aria-label="Sebelumnya" class="grid place-items-center w-14 h-14 rounded-full border border-zinc-700 hover:border-white hover:bg-white hover:text-ink text-white transition-colors"><i class="ph ph-arrow-left text-xl"></i></button>
+            <button id="work-next" aria-label="Berikutnya" class="grid place-items-center w-14 h-14 rounded-full border border-zinc-700 hover:border-white hover:bg-white hover:text-ink text-white transition-colors"><i class="ph ph-arrow-right text-xl"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div id="work-track" class="work-track mt-12 flex gap-5 overflow-x-auto snap-x snap-mandatory px-5 lg:px-8 pb-2 scroll-smooth">
+        <!-- kartu karya: gambar + label overlay -->
+        <article class="snap-start shrink-0 w-[85vw] sm:w-[520px] group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] border border-zinc-800">
+            <img src="https://picsum.photos/seed/karya-lentera-fintech/900/680" alt="Proyek Lentera" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between">
+              <div>
+                <span class="text-xs font-semibold tracking-wide text-accent uppercase">Fintech App</span>
+                <h3 class="display text-white text-2xl mt-1">Lentera</h3>
               </div>
+              <span class="grid place-items-center w-10 h-10 rounded-full bg-white/10 backdrop-blur text-white group-hover:bg-accent transition-colors"><i class="ph ph-arrow-up-right"></i></span>
+            </div>
+          </div>
+        </article>
+        <article class="snap-start shrink-0 w-[85vw] sm:w-[520px] group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] border border-zinc-800">
+            <img src="https://picsum.photos/seed/karya-pasarnusa-ecom/900/680" alt="Proyek Pasarnusa" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between">
+              <div>
+                <span class="text-xs font-semibold tracking-wide text-accent uppercase">E-commerce</span>
+                <h3 class="display text-white text-2xl mt-1">Pasarnusa</h3>
+              </div>
+              <span class="grid place-items-center w-10 h-10 rounded-full bg-white/10 backdrop-blur text-white group-hover:bg-accent transition-colors"><i class="ph ph-arrow-up-right"></i></span>
+            </div>
+          </div>
+        </article>
+        <article class="snap-start shrink-0 w-[85vw] sm:w-[520px] group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] border border-zinc-800">
+            <img src="https://picsum.photos/seed/karya-gizi-health/900/680" alt="Proyek Gizi" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between">
+              <div>
+                <span class="text-xs font-semibold tracking-wide text-accent uppercase">Health Platform</span>
+                <h3 class="display text-white text-2xl mt-1">Gizi</h3>
+              </div>
+              <span class="grid place-items-center w-10 h-10 rounded-full bg-white/10 backdrop-blur text-white group-hover:bg-accent transition-colors"><i class="ph ph-arrow-up-right"></i></span>
+            </div>
+          </div>
+        </article>
+        <article class="snap-start shrink-0 w-[85vw] sm:w-[520px] group">
+          <div class="relative rounded-2xl overflow-hidden aspect-[4/3] border border-zinc-800">
+            <img src="https://picsum.photos/seed/karya-atlas-logistics/900/680" alt="Proyek Atlas" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-0 inset-x-0 p-6 flex items-end justify-between">
+              <div>
+                <span class="text-xs font-semibold tracking-wide text-accent uppercase">Logistics Dashboard</span>
+                <h3 class="display text-white text-2xl mt-1">Atlas</h3>
+              </div>
+              <span class="grid place-items-center w-10 h-10 rounded-full bg-white/10 backdrop-blur text-white group-hover:bg-accent transition-colors"><i class="ph ph-arrow-up-right"></i></span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-              <!-- Kartu tiket floating -->
-              <div class="absolute bottom-5 left-5 right-5 rounded-2xl bg-zinc-900/90 backdrop-blur border border-white/10 p-4 flex items-center gap-4">
-                <div class="grid place-items-center w-12 h-12 rounded-xl bg-accent text-ink shrink-0">
-                  <i class="ph ph-ticket text-2xl"></i>
-                </div>
-                <div class="min-w-0">
-                  <p class="text-sm font-semibold text-white truncate">Synchronize Fest &middot; Presale 2</p>
-                  <p class="text-xs text-zinc-400">QRIS &middot; e-wallet &middot; Virtual Account</p>
-                </div>
-                <span class="ml-auto shrink-0 text-accent font-display font-semibold">Rp350K</span>
+    <!-- ========================= LAYANAN (accordion bernomor) ========================= -->
+    <section id="layanan" class="py-24 border-t border-zinc-900">
+      <div class="mx-auto max-w-content px-5 lg:px-8 grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-4 reveal">
+          <h2 class="display text-white text-4xl sm:text-5xl">Apa yang kami kerjakan</h2>
+          <p class="mt-5 text-zinc-400 leading-relaxed font-sans">Tim kecil, fokus penuh. Dari strategi sampai produk yang siap dipakai pengguna.</p>
+        </div>
+
+        <div class="lg:col-span-8 reveal">
+          <div class="border-t border-zinc-800">
+            <details class="group border-b border-zinc-800 py-6" open>
+              <summary class="flex items-center gap-5 cursor-pointer list-none">
+                <span class="display text-zinc-600 text-2xl w-12">01<span class="text-accent">.</span></span>
+                <span class="display text-white text-2xl sm:text-3xl flex-1">Product Design</span>
+                <i class="ph ph-plus text-2xl text-zinc-500 group-open:rotate-45 transition-transform"></i>
+              </summary>
+              <p class="mt-4 pl-[68px] text-zinc-400 leading-relaxed font-sans max-w-[60ch]">UI/UX, design system, dan prototipe interaktif yang teruji bersama pengguna sebelum sebaris kode ditulis.</p>
+            </details>
+            <details class="group border-b border-zinc-800 py-6">
+              <summary class="flex items-center gap-5 cursor-pointer list-none">
+                <span class="display text-zinc-600 text-2xl w-12">02<span class="text-accent">.</span></span>
+                <span class="display text-white text-2xl sm:text-3xl flex-1">Web Development</span>
+                <i class="ph ph-plus text-2xl text-zinc-500 group-open:rotate-45 transition-transform"></i>
+              </summary>
+              <p class="mt-4 pl-[68px] text-zinc-400 leading-relaxed font-sans max-w-[60ch]">Web app dan landing page cepat dengan Next.js, performa tinggi, dan SEO yang rapi sejak fondasi.</p>
+            </details>
+            <details class="group border-b border-zinc-800 py-6">
+              <summary class="flex items-center gap-5 cursor-pointer list-none">
+                <span class="display text-zinc-600 text-2xl w-12">03<span class="text-accent">.</span></span>
+                <span class="display text-white text-2xl sm:text-3xl flex-1">Mobile Apps</span>
+                <i class="ph ph-plus text-2xl text-zinc-500 group-open:rotate-45 transition-transform"></i>
+              </summary>
+              <p class="mt-4 pl-[68px] text-zinc-400 leading-relaxed font-sans max-w-[60ch]">Aplikasi iOS dan Android dari satu basis kode, lancar dan terasa native di tiap perangkat.</p>
+            </details>
+            <details class="group border-b border-zinc-800 py-6">
+              <summary class="flex items-center gap-5 cursor-pointer list-none">
+                <span class="display text-zinc-600 text-2xl w-12">04<span class="text-accent">.</span></span>
+                <span class="display text-white text-2xl sm:text-3xl flex-1">Brand Identity</span>
+                <i class="ph ph-plus text-2xl text-zinc-500 group-open:rotate-45 transition-transform"></i>
+              </summary>
+              <p class="mt-4 pl-[68px] text-zinc-400 leading-relaxed font-sans max-w-[60ch]">Logo, sistem visual, dan panduan brand yang konsisten di seluruh titik sentuh digital maupun cetak.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= PROSES (timeline) ========================= -->
+    <section id="proses" class="py-24 border-t border-zinc-900">
+      <div class="mx-auto max-w-content px-5 lg:px-8">
+        <h2 class="reveal display text-white text-4xl sm:text-6xl max-w-2xl">Cara kami bekerja</h2>
+
+        <div class="mt-14 relative">
+          <!-- garis vertikal -->
+          <div class="absolute left-[7px] md:left-1/2 md:-translate-x-1/2 top-2 bottom-2 w-px bg-zinc-800"></div>
+
+          <div class="space-y-12">
+            <div class="reveal relative grid md:grid-cols-2 gap-4 md:gap-12 items-start">
+              <span class="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-1.5 w-4 h-4 rounded-full bg-accent ring-4 ring-ink"></span>
+              <div class="pl-8 md:pl-0 md:text-right md:pr-12">
+                <span class="display text-accent text-xl">01 / Discovery</span>
+              </div>
+              <div class="pl-8 md:pl-12">
+                <h3 class="display text-white text-xl">Riset &amp; strategi</h3>
+                <p class="mt-2 text-zinc-400 leading-relaxed font-sans max-w-[44ch]">Memahami masalah, pengguna, dan tujuan bisnis sebelum menentukan arah produk.</p>
+              </div>
+            </div>
+            <div class="reveal relative grid md:grid-cols-2 gap-4 md:gap-12 items-start">
+              <span class="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-1.5 w-4 h-4 rounded-full bg-accent ring-4 ring-ink"></span>
+              <div class="pl-8 md:pl-0 md:text-right md:pr-12">
+                <span class="display text-accent text-xl">02 / Design</span>
+              </div>
+              <div class="pl-8 md:pl-12">
+                <h3 class="display text-white text-xl">UI/UX &amp; prototipe</h3>
+                <p class="mt-2 text-zinc-400 leading-relaxed font-sans max-w-[44ch]">Merancang alur dan antarmuka, lalu menguji prototipe langsung ke calon pengguna.</p>
+              </div>
+            </div>
+            <div class="reveal relative grid md:grid-cols-2 gap-4 md:gap-12 items-start">
+              <span class="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-1.5 w-4 h-4 rounded-full bg-accent ring-4 ring-ink"></span>
+              <div class="pl-8 md:pl-0 md:text-right md:pr-12">
+                <span class="display text-accent text-xl">03 / Build</span>
+              </div>
+              <div class="pl-8 md:pl-12">
+                <h3 class="display text-white text-xl">Development &amp; QA</h3>
+                <p class="mt-2 text-zinc-400 leading-relaxed font-sans max-w-[44ch]">Membangun produk dengan kode bersih, terukur, dan diuji di tiap tahap.</p>
+              </div>
+            </div>
+            <div class="reveal relative grid md:grid-cols-2 gap-4 md:gap-12 items-start">
+              <span class="absolute left-0 md:left-1/2 md:-translate-x-1/2 top-1.5 w-4 h-4 rounded-full bg-accent ring-4 ring-ink"></span>
+              <div class="pl-8 md:pl-0 md:text-right md:pr-12">
+                <span class="display text-accent text-xl">04 / Launch</span>
+              </div>
+              <div class="pl-8 md:pl-12">
+                <h3 class="display text-white text-xl">Rilis &amp; iterasi</h3>
+                <p class="mt-2 text-zinc-400 leading-relaxed font-sans max-w-[44ch]">Meluncurkan produk, memantau data, dan terus menyempurnakan setelah rilis.</p>
               </div>
             </div>
           </div>
@@ -157,136 +302,25 @@
       </div>
     </section>
 
-    <!-- ========================= LOGO WALL (marquee) ========================= -->
-    <section class="py-12 border-y border-zinc-900">
-      <div class="mx-auto max-w-content px-5 lg:px-8">
-        <p class="text-center text-sm text-zinc-500 mb-8">Dipercaya penyelenggara event di seluruh Indonesia</p>
-        <div class="marquee-wrap relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
-          <div class="marquee gap-12 text-zinc-500">
-            <!-- set 1 + set 2 (duplikat untuk loop mulus). Logo monogram untuk brand fiktif. -->
-            <span class="flex items-center gap-2.5 shrink-0"><span class="grid place-items-center w-8 h-8 rounded-lg border border-zinc-700 font-display font-bold text-sm">A</span><span class="font-display font-semibold whitespace-nowrap">Arunika Live</span></span>
-            <span class="flex items-center gap-2.5 shrink-0"><span class="grid place-items-center w-8 h-8 rounded-full border border-zinc-700 font-display font-bold text-sm">P</span><span class="font-display font-semibold whitespace-nowrap">Pulse Fest</span></span>
-            <span class="flex items-center gap-2.5 shrink-0"><span class="grid place-items-center w-8 h-8 rounded-lg border border-zinc-700 font-display font-bold text-sm">RS</span><span class="font-display font-semibold whitespace-nowrap">RuangSeni</span></span>
-            <span class="flex items-center gap-2.5 shrink-0"><span class="grid place-items-center w-8 h-8 rounded-full border border-zinc-700 font-display font-bold text-sm">G</span><span class="font-display font-semibold whitespace-nowrap">Gemilang</span></span>
-            <span class="flex items-center gap-2.5 shrink-0"><span class="grid place-items-center w-8 h-8 rounded-lg border border-zinc-700 font-display font-bold text-sm">TL</span><span class="font-display font-semibold whitespace-nowrap">Tepi Laut</span></span>
-            <span class="flex items-center gap-2.5 shrink-0"><span class="grid place-items-center w-8 h-8 rounded-full border border-zinc-700 font-display font-bold text-sm">K</span><span class="font-display font-semibold whitespace-nowrap">Kustik</span></span>
-            <!-- duplikat -->
-            <span class="flex items-center gap-2.5 shrink-0" aria-hidden="true"><span class="grid place-items-center w-8 h-8 rounded-lg border border-zinc-700 font-display font-bold text-sm">A</span><span class="font-display font-semibold whitespace-nowrap">Arunika Live</span></span>
-            <span class="flex items-center gap-2.5 shrink-0" aria-hidden="true"><span class="grid place-items-center w-8 h-8 rounded-full border border-zinc-700 font-display font-bold text-sm">P</span><span class="font-display font-semibold whitespace-nowrap">Pulse Fest</span></span>
-            <span class="flex items-center gap-2.5 shrink-0" aria-hidden="true"><span class="grid place-items-center w-8 h-8 rounded-lg border border-zinc-700 font-display font-bold text-sm">RS</span><span class="font-display font-semibold whitespace-nowrap">RuangSeni</span></span>
-            <span class="flex items-center gap-2.5 shrink-0" aria-hidden="true"><span class="grid place-items-center w-8 h-8 rounded-full border border-zinc-700 font-display font-bold text-sm">G</span><span class="font-display font-semibold whitespace-nowrap">Gemilang</span></span>
-            <span class="flex items-center gap-2.5 shrink-0" aria-hidden="true"><span class="grid place-items-center w-8 h-8 rounded-lg border border-zinc-700 font-display font-bold text-sm">TL</span><span class="font-display font-semibold whitespace-nowrap">Tepi Laut</span></span>
-            <span class="flex items-center gap-2.5 shrink-0" aria-hidden="true"><span class="grid place-items-center w-8 h-8 rounded-full border border-zinc-700 font-display font-bold text-sm">K</span><span class="font-display font-semibold whitespace-nowrap">Kustik</span></span>
-          </div>
+    <!-- ========================= STATS ========================= -->
+    <!-- Angka di bawah ini adalah placeholder ilustrasi, ganti dengan data nyata. -->
+    <section class="py-20 border-t border-zinc-900">
+      <div class="mx-auto max-w-content px-5 lg:px-8 grid grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="reveal">
+          <p class="display text-white text-5xl sm:text-6xl">120<span class="text-accent">+</span></p>
+          <p class="mt-2 text-sm text-zinc-500 font-sans">Produk diluncurkan</p>
         </div>
-      </div>
-    </section>
-
-    <!-- ========================= FITUR (bento) ========================= -->
-    <section id="fitur" class="py-24">
-      <div class="mx-auto max-w-content px-5 lg:px-8">
-        <div class="max-w-2xl reveal">
-          <h2 class="font-display font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight">
-            Semua yang kamu butuh untuk menjual tiket.
-          </h2>
-          <p class="mt-4 text-lg text-zinc-400 leading-relaxed">
-            Dari pembayaran sampai check-in di pintu masuk, semuanya jadi satu alur yang rapi.
-          </p>
+        <div class="reveal">
+          <p class="display text-white text-5xl sm:text-6xl">40<span class="text-accent">+</span></p>
+          <p class="mt-2 text-sm text-zinc-500 font-sans">Klien dari berbagai industri</p>
         </div>
-
-        <div class="mt-12 grid grid-cols-1 md:grid-cols-6 gap-4">
-          <!-- Cell besar: pembayaran -->
-          <div class="reveal md:col-span-4 rounded-3xl border border-zinc-800 bg-zinc-900/40 p-7 flex flex-col justify-between min-h-[260px] relative overflow-hidden">
-            <div class="absolute -right-10 -top-10 w-48 h-48 rounded-full bg-accent/10 blur-2xl"></div>
-            <div class="relative">
-              <div class="grid place-items-center w-11 h-11 rounded-xl bg-accent text-ink"><i class="ph ph-wallet text-2xl"></i></div>
-              <h3 class="mt-5 font-display font-semibold text-xl text-white">Pembayaran lengkap, tanpa setup ribet</h3>
-              <p class="mt-2 text-zinc-400 leading-relaxed max-w-[42ch]">QRIS, GoPay, OVO, DANA, ShopeePay, Virtual Account semua bank, sampai kartu kredit. Dana cair otomatis ke rekeningmu.</p>
-            </div>
-            <div class="relative mt-6 flex flex-wrap gap-2">
-              <span class="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-300">QRIS</span>
-              <span class="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-300">E-wallet</span>
-              <span class="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-300">Virtual Account</span>
-              <span class="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-300">Kartu Kredit</span>
-            </div>
-          </div>
-
-          <!-- Cell: e-ticket -->
-          <div class="reveal md:col-span-2 rounded-3xl border border-zinc-800 bg-zinc-900/40 p-7 min-h-[260px] flex flex-col">
-            <div class="grid place-items-center w-11 h-11 rounded-xl bg-zinc-800 text-accent"><i class="ph ph-qr-code text-2xl"></i></div>
-            <h3 class="mt-5 font-display font-semibold text-xl text-white">E-ticket anti-calo</h3>
-            <p class="mt-2 text-zinc-400 leading-relaxed">Tiap tiket punya QR unik dan hanya bisa dipindai sekali. Tidak bisa digandakan.</p>
-          </div>
-
-          <!-- Cell: check-in (dengan visual) -->
-          <div class="reveal md:col-span-2 rounded-3xl border border-zinc-800 bg-zinc-900/40 p-7 min-h-[240px] flex flex-col">
-            <div class="grid place-items-center w-11 h-11 rounded-xl bg-zinc-800 text-accent"><i class="ph ph-scan text-2xl"></i></div>
-            <h3 class="mt-5 font-display font-semibold text-xl text-white">Check-in 2 detik</h3>
-            <p class="mt-2 text-zinc-400 leading-relaxed">Scan QR pakai HP panitia. Antrian masuk jalan terus tanpa menumpuk.</p>
-          </div>
-
-          <!-- Cell: dashboard (dengan image/gradien) -->
-          <div class="reveal md:col-span-4 rounded-3xl border border-zinc-800 bg-zinc-900/40 p-7 min-h-[240px] grid sm:grid-cols-2 gap-6 items-center">
-            <div>
-              <div class="grid place-items-center w-11 h-11 rounded-xl bg-accent text-ink"><i class="ph ph-chart-line-up text-2xl"></i></div>
-              <h3 class="mt-5 font-display font-semibold text-xl text-white">Dashboard real-time</h3>
-              <p class="mt-2 text-zinc-400 leading-relaxed">Pantau penjualan, pendapatan, dan demografi pembeli detik itu juga.</p>
-            </div>
-            <div class="rounded-2xl border border-zinc-800 bg-ink/60 p-5">
-              <div class="flex items-end justify-between gap-1.5 h-28">
-                <div class="w-full rounded-t bg-zinc-700" style="height:35%"></div>
-                <div class="w-full rounded-t bg-zinc-700" style="height:55%"></div>
-                <div class="w-full rounded-t bg-zinc-600" style="height:45%"></div>
-                <div class="w-full rounded-t bg-accent/70" style="height:72%"></div>
-                <div class="w-full rounded-t bg-accent" style="height:92%"></div>
-                <div class="w-full rounded-t bg-accent/70" style="height:80%"></div>
-              </div>
-              <p class="mt-3 text-xs text-zinc-500">Tren penjualan 6 hari terakhir <span class="text-zinc-600">(ilustrasi)</span></p>
-            </div>
-          </div>
-
-          <!-- Cell: kategori tiket -->
-          <div class="reveal md:col-span-3 rounded-3xl border border-zinc-800 bg-zinc-900/40 p-7 min-h-[180px]">
-            <div class="grid place-items-center w-11 h-11 rounded-xl bg-zinc-800 text-accent"><i class="ph ph-stack text-2xl"></i></div>
-            <h3 class="mt-5 font-display font-semibold text-xl text-white">Atur kategori &amp; kuota</h3>
-            <p class="mt-2 text-zinc-400 leading-relaxed">Early bird, presale, regular, VIP, sampai bundling. Atur harga dan stok per kategori.</p>
-          </div>
-
-          <!-- Cell: pencairan -->
-          <div class="reveal md:col-span-3 rounded-3xl border border-zinc-800 bg-zinc-900/40 p-7 min-h-[180px]">
-            <div class="grid place-items-center w-11 h-11 rounded-xl bg-zinc-800 text-accent"><i class="ph ph-bank text-2xl"></i></div>
-            <h3 class="mt-5 font-display font-semibold text-xl text-white">Pencairan dana cepat</h3>
-            <p class="mt-2 text-zinc-400 leading-relaxed">Settlement H+1 ke rekening, tanpa biaya tersembunyi dan tanpa nunggu event selesai.</p>
-          </div>
+        <div class="reveal">
+          <p class="display text-white text-5xl sm:text-6xl">7<span class="text-accent"> thn</span></p>
+          <p class="mt-2 text-sm text-zinc-500 font-sans">Pengalaman sejak 2018</p>
         </div>
-      </div>
-    </section>
-
-    <!-- ========================= CARA KERJA (3 langkah) ========================= -->
-    <section id="cara-kerja" class="py-24 border-t border-zinc-900">
-      <div class="mx-auto max-w-content px-5 lg:px-8">
-        <div class="reveal max-w-2xl">
-          <h2 class="font-display font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight">
-            Dari ide event ke tiket terjual, dalam 3 langkah.
-          </h2>
-        </div>
-
-        <div class="mt-14 grid md:grid-cols-3 gap-8 md:gap-6">
-          <div class="reveal relative">
-            <span class="font-display text-5xl font-bold text-zinc-800">01</span>
-            <h3 class="mt-3 font-display font-semibold text-xl text-white">Buat event &amp; atur tiket</h3>
-            <p class="mt-2 text-zinc-400 leading-relaxed">Isi detail event, unggah poster, lalu tentukan kategori tiket beserta harga dan kuotanya.</p>
-          </div>
-          <div class="reveal relative">
-            <span class="font-display text-5xl font-bold text-zinc-800">02</span>
-            <h3 class="mt-3 font-display font-semibold text-xl text-white">Bagikan link &amp; jual</h3>
-            <p class="mt-2 text-zinc-400 leading-relaxed">Sebarkan link halaman event ke media sosial. Pembeli bayar, e-ticket terkirim otomatis.</p>
-          </div>
-          <div class="reveal relative">
-            <span class="font-display text-5xl font-bold text-zinc-800">03</span>
-            <h3 class="mt-3 font-display font-semibold text-xl text-white">Scan &amp; cairkan dana</h3>
-            <p class="mt-2 text-zinc-400 leading-relaxed">Pindai QR di pintu masuk saat hari-H. Dana penjualan cair H+1 ke rekeningmu.</p>
-          </div>
+        <div class="reveal">
+          <p class="display text-white text-5xl sm:text-6xl">12<span class="text-accent">+</span></p>
+          <p class="mt-2 text-sm text-zinc-500 font-sans">Penghargaan desain</p>
         </div>
       </div>
     </section>
@@ -294,160 +328,35 @@
     <!-- ========================= TESTIMONI ========================= -->
     <section class="py-24 border-t border-zinc-900">
       <div class="mx-auto max-w-content px-5 lg:px-8">
-        <h2 class="reveal font-display font-bold text-white text-3xl sm:text-4xl tracking-tight max-w-xl">
-          Penyelenggara event sudah pindah ke Nusatix.
-        </h2>
-        <div class="mt-12 grid md:grid-cols-3 gap-5">
-          <figure class="reveal rounded-3xl border border-zinc-800 bg-zinc-900/40 p-7">
-            <i class="ph ph-quotes text-3xl text-accent"></i>
-            <blockquote class="mt-4 text-zinc-200 leading-relaxed">&ldquo;Penjualan presale 2.000 tiket habis tanpa server kami down sekali pun. Check-in di hari-H juga lancar.&rdquo;</blockquote>
-            <figcaption class="mt-5 text-sm">
-              <span class="block font-semibold text-white">Raka Pradipta</span>
-              <span class="text-zinc-500">Event Director, Pulse Fest</span>
-            </figcaption>
-          </figure>
-          <figure class="reveal rounded-3xl border border-zinc-800 bg-zinc-900/40 p-7">
-            <i class="ph ph-quotes text-3xl text-accent"></i>
-            <blockquote class="mt-4 text-zinc-200 leading-relaxed">&ldquo;Settlement H+1 itu pembeda. Cash flow panitia jadi sehat, nggak perlu nunggu event selesai.&rdquo;</blockquote>
-            <figcaption class="mt-5 text-sm">
-              <span class="block font-semibold text-white">Sinta Mahardika</span>
-              <span class="text-zinc-500">Founder, RuangSeni</span>
-            </figcaption>
-          </figure>
-          <figure class="reveal rounded-3xl border border-zinc-800 bg-zinc-900/40 p-7">
-            <i class="ph ph-quotes text-3xl text-accent"></i>
-            <blockquote class="mt-4 text-zinc-200 leading-relaxed">&ldquo;Dashboard real-time bikin kami bisa atur strategi promo di tengah penjualan. Sangat membantu.&rdquo;</blockquote>
-            <figcaption class="mt-5 text-sm">
-              <span class="block font-semibold text-white">Bagas Wirawan</span>
-              <span class="text-zinc-500">Ketua Panitia, Tepi Laut</span>
-            </figcaption>
-          </figure>
-        </div>
+        <figure class="reveal max-w-4xl">
+          <i class="ph ph-quotes text-5xl text-accent"></i>
+          <blockquote class="display text-white text-3xl sm:text-5xl mt-6 leading-[1.1] normal-case">
+            &ldquo;KARYA bukan sekadar vendor. Mereka ikut memikirkan produk seperti tim kami sendiri.&rdquo;
+          </blockquote>
+          <figcaption class="mt-8 flex items-center gap-4 font-sans">
+            <span class="grid place-items-center w-12 h-12 rounded-full bg-accent text-white display">N</span>
+            <span>
+              <span class="block font-semibold text-white">Nadia Putri</span>
+              <span class="text-sm text-zinc-500">Co-founder, Lentera</span>
+            </span>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- ========================= HARGA ========================= -->
-    <section id="harga" class="py-24 border-t border-zinc-900">
-      <div class="mx-auto max-w-content px-5 lg:px-8">
-        <div class="reveal max-w-2xl">
-          <h2 class="font-display font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight">
-            Bayar hanya saat tiketmu terjual.
-          </h2>
-          <p class="mt-4 text-lg text-zinc-400">Tanpa biaya langganan. Tanpa biaya setup. Tanpa biaya tersembunyi.</p>
-        </div>
-
-        <div class="mt-12 grid lg:grid-cols-3 gap-5 items-stretch">
-          <!-- Gratis -->
-          <div class="reveal rounded-3xl border border-zinc-800 bg-zinc-900/40 p-8 flex flex-col">
-            <h3 class="font-display font-semibold text-white text-xl">Gratis</h3>
-            <p class="mt-1 text-sm text-zinc-500">Untuk event gratis.</p>
-            <p class="mt-6 font-display text-4xl font-bold text-white">Rp0</p>
-            <p class="text-sm text-zinc-500">selamanya</p>
-            <ul class="mt-6 space-y-3 text-sm text-zinc-300 flex-1">
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Tiket gratis tanpa batas</li>
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> E-ticket QR &amp; check-in scan</li>
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Halaman event publik</li>
-            </ul>
-            <a href="#" class="mt-8 inline-flex justify-center rounded-full border border-zinc-700 hover:border-zinc-500 text-white font-semibold px-5 py-3 transition-colors">Mulai gratis</a>
-          </div>
-
-          <!-- Pro (highlight) -->
-          <div class="reveal rounded-3xl border-2 border-accent bg-zinc-900/60 p-8 flex flex-col relative">
-            <span class="absolute -top-3 left-8 rounded-full bg-accent text-ink text-xs font-bold px-3 py-1">Paling populer</span>
-            <h3 class="font-display font-semibold text-white text-xl">Pro</h3>
-            <p class="mt-1 text-sm text-zinc-500">Untuk event berbayar.</p>
-            <p class="mt-6 font-display text-4xl font-bold text-white">2,5%<span class="text-xl text-zinc-400"> + Rp2.500</span></p>
-            <p class="text-sm text-zinc-500">per tiket terjual</p>
-            <ul class="mt-6 space-y-3 text-sm text-zinc-300 flex-1">
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Semua di paket Gratis</li>
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Semua metode pembayaran</li>
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Dashboard analytics real-time</li>
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Pencairan dana H+1</li>
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Kategori &amp; kode promo</li>
-            </ul>
-            <a href="#" class="mt-8 inline-flex justify-center rounded-full bg-accent hover:bg-accent-deep text-ink font-semibold px-5 py-3 transition-colors">Mulai Jual Tiket</a>
-          </div>
-
-          <!-- Enterprise -->
-          <div class="reveal rounded-3xl border border-zinc-800 bg-zinc-900/40 p-8 flex flex-col">
-            <h3 class="font-display font-semibold text-white text-xl">Enterprise</h3>
-            <p class="mt-1 text-sm text-zinc-500">Untuk promotor &amp; venue besar.</p>
-            <p class="mt-6 font-display text-4xl font-bold text-white">Custom</p>
-            <p class="text-sm text-zinc-500">hubungi tim kami</p>
-            <ul class="mt-6 space-y-3 text-sm text-zinc-300 flex-1">
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Semua di paket Pro</li>
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Halaman white-label</li>
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Akses API &amp; integrasi</li>
-              <li class="flex gap-2.5"><i class="ph ph-check text-accent text-lg shrink-0"></i> Account manager khusus</li>
-            </ul>
-            <a href="#" class="mt-8 inline-flex justify-center rounded-full border border-zinc-700 hover:border-zinc-500 text-white font-semibold px-5 py-3 transition-colors">Hubungi sales</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= FAQ ========================= -->
-    <section id="faq" class="py-24 border-t border-zinc-900">
-      <div class="mx-auto max-w-content px-5 lg:px-8 grid lg:grid-cols-12 gap-10">
-        <div class="lg:col-span-4 reveal">
-          <h2 class="font-display font-bold text-white text-3xl sm:text-4xl tracking-tight">Pertanyaan umum</h2>
-          <p class="mt-4 text-zinc-400">Belum terjawab? <a href="#" class="text-accent hover:underline">Hubungi tim kami</a>.</p>
-        </div>
-        <div class="lg:col-span-8 reveal divide-y divide-zinc-800 border-t border-zinc-800">
-          <details class="group py-5">
-            <summary class="flex items-center justify-between cursor-pointer list-none text-white font-medium">
-              Kapan dana penjualan saya cair?
-              <i class="ph ph-plus text-xl text-zinc-500 group-open:rotate-45 transition-transform"></i>
-            </summary>
-            <p class="mt-3 text-zinc-400 leading-relaxed">Dana cair H+1 (satu hari kerja) setelah transaksi berhasil, langsung ke rekening bank yang kamu daftarkan. Kamu tidak perlu menunggu event selesai.</p>
-          </details>
-          <details class="group py-5">
-            <summary class="flex items-center justify-between cursor-pointer list-none text-white font-medium">
-              Metode pembayaran apa saja yang didukung?
-              <i class="ph ph-plus text-xl text-zinc-500 group-open:rotate-45 transition-transform"></i>
-            </summary>
-            <p class="mt-3 text-zinc-400 leading-relaxed">QRIS, e-wallet (GoPay, OVO, DANA, ShopeePay), Virtual Account seluruh bank besar, serta kartu kredit dan debit. Pembeli tinggal pilih yang paling nyaman.</p>
-          </details>
-          <details class="group py-5">
-            <summary class="flex items-center justify-between cursor-pointer list-none text-white font-medium">
-              Bagaimana cara mencegah tiket palsu atau calo?
-              <i class="ph ph-plus text-xl text-zinc-500 group-open:rotate-45 transition-transform"></i>
-            </summary>
-            <p class="mt-3 text-zinc-400 leading-relaxed">Setiap tiket punya kode QR unik yang hanya valid sekali pakai. Saat dipindai di pintu masuk, sistem langsung menandainya terpakai, sehingga tidak bisa digandakan.</p>
-          </details>
-          <details class="group py-5">
-            <summary class="flex items-center justify-between cursor-pointer list-none text-white font-medium">
-              Apakah ada biaya untuk event gratis?
-              <i class="ph ph-plus text-xl text-zinc-500 group-open:rotate-45 transition-transform"></i>
-            </summary>
-            <p class="mt-3 text-zinc-400 leading-relaxed">Tidak. Event dengan tiket gratis bisa memakai Nusatix tanpa biaya apa pun, termasuk e-ticket dan fitur check-in scan.</p>
-          </details>
-          <details class="group py-5">
-            <summary class="flex items-center justify-between cursor-pointer list-none text-white font-medium">
-              Berapa lama setup sampai bisa jual tiket?
-              <i class="ph ph-plus text-xl text-zinc-500 group-open:rotate-45 transition-transform"></i>
-            </summary>
-            <p class="mt-3 text-zinc-400 leading-relaxed">Sekitar lima menit. Buat akun, isi detail event, atur kategori tiket, lalu halaman event-mu siap dibagikan dan menerima pembayaran.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================= CTA PENUTUP ========================= -->
-    <section class="py-24">
-      <div class="mx-auto max-w-content px-5 lg:px-8">
-        <div class="reveal relative overflow-hidden rounded-[2rem] border border-zinc-800 bg-zinc-900/50 px-6 py-16 sm:py-20 text-center">
-          <div class="absolute inset-0 -z-0 hero-glow"></div>
-          <div class="relative">
-            <h2 class="font-display font-bold text-white text-3xl sm:text-5xl tracking-tight max-w-2xl mx-auto leading-tight">
-              Siap jual tiket event pertamamu?
-            </h2>
-            <p class="mt-4 text-lg text-zinc-400 max-w-xl mx-auto">Gratis dibuat, hanya bayar saat tiket terjual. Mulai hari ini.</p>
-            <a href="#" class="mt-8 inline-flex items-center gap-2 rounded-full bg-accent hover:bg-accent-deep text-ink font-semibold px-7 py-4 transition-colors active:scale-[0.98]">
-              Mulai Jual Tiket
-              <i class="ph ph-arrow-right text-lg"></i>
-            </a>
-          </div>
+    <!-- ========================= CTA / KONTAK ========================= -->
+    <section id="kontak" class="py-28 border-t border-zinc-900 relative overflow-hidden">
+      <div class="absolute inset-0" style="background:radial-gradient(60% 80% at 50% 0%, rgba(255,61,46,.16), transparent 70%)"></div>
+      <div class="reveal relative mx-auto max-w-content px-5 lg:px-8 text-center">
+        <h2 class="display text-white text-5xl sm:text-7xl lg:text-8xl">Punya ide?<br /><span class="text-accent">Mari bicara.</span></h2>
+        <p class="mt-6 text-lg text-zinc-400 max-w-xl mx-auto font-sans">Ceritakan proyekmu. Kami balas dalam 1x24 jam kerja.</p>
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-3">
+          <a href="mailto:halo@karya.studio" class="inline-flex items-center gap-2 rounded-full bg-accent-deep hover:bg-[#C0220F] text-white font-semibold px-7 py-4 transition-colors active:scale-[0.98]">
+            halo@karya.studio <i class="ph ph-arrow-up-right text-lg"></i>
+          </a>
+          <a href="#" class="inline-flex items-center gap-2 rounded-full border border-zinc-600 hover:border-white text-white font-semibold px-7 py-4 transition-colors active:scale-[0.98]">
+            <i class="ph ph-whatsapp-logo text-lg"></i> WhatsApp
+          </a>
         </div>
       </div>
     </section>
@@ -455,73 +364,73 @@
 
   <!-- ========================= FOOTER ========================= -->
   <footer class="border-t border-zinc-900 py-14">
-    <div class="mx-auto max-w-content px-5 lg:px-8 grid gap-10 md:grid-cols-12">
-      <div class="md:col-span-5">
+    <div class="mx-auto max-w-content px-5 lg:px-8 flex flex-col md:flex-row gap-10 justify-between">
+      <div class="max-w-xs">
         <a href="#" class="flex items-center gap-2.5">
-          <span class="grid place-items-center w-9 h-9 rounded-xl bg-accent text-ink font-display font-bold text-lg">N</span>
-          <span class="font-display font-bold text-lg tracking-tight text-white">Nusatix</span>
+          <span class="grid place-items-center w-9 h-9 rounded-lg bg-accent text-ink display text-lg">K</span>
+          <span class="display text-xl text-white tracking-tight">KARYA</span>
         </a>
-        <p class="mt-4 text-sm text-zinc-500 max-w-xs">Platform ticketing untuk semua event di Nusantara. Buat, jual, dan kelola tiket dalam satu tempat.</p>
-        <div class="mt-5 flex gap-3 text-zinc-400">
-          <a href="#" aria-label="Instagram" class="grid place-items-center w-9 h-9 rounded-full border border-zinc-800 hover:border-zinc-600 hover:text-white transition-colors"><i class="ph ph-instagram-logo text-lg"></i></a>
-          <a href="#" aria-label="X" class="grid place-items-center w-9 h-9 rounded-full border border-zinc-800 hover:border-zinc-600 hover:text-white transition-colors"><i class="ph ph-x-logo text-lg"></i></a>
-          <a href="#" aria-label="TikTok" class="grid place-items-center w-9 h-9 rounded-full border border-zinc-800 hover:border-zinc-600 hover:text-white transition-colors"><i class="ph ph-tiktok-logo text-lg"></i></a>
+        <p class="mt-4 text-sm text-zinc-500 font-sans">Studio produk digital &amp; brand. Berbasis di Jakarta, bekerja untuk klien di mana saja.</p>
+      </div>
+      <div class="flex gap-16">
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-zinc-500">Menu</h4>
+          <ul class="mt-4 space-y-2.5 text-sm text-zinc-400 font-sans">
+            <li><a href="#karya" class="hover:text-white transition-colors">Karya</a></li>
+            <li><a href="#layanan" class="hover:text-white transition-colors">Layanan</a></li>
+            <li><a href="#proses" class="hover:text-white transition-colors">Proses</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-wider text-zinc-500">Sosial</h4>
+          <ul class="mt-4 space-y-2.5 text-sm text-zinc-400 font-sans">
+            <li><a href="#" class="hover:text-white transition-colors">Instagram</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
+            <li><a href="#" class="hover:text-white transition-colors">Dribbble</a></li>
+          </ul>
         </div>
       </div>
-      <div class="md:col-span-2">
-        <h4 class="text-sm font-semibold text-white">Produk</h4>
-        <ul class="mt-4 space-y-2.5 text-sm text-zinc-500">
-          <li><a href="#fitur" class="hover:text-white transition-colors">Fitur</a></li>
-          <li><a href="#harga" class="hover:text-white transition-colors">Harga</a></li>
-          <li><a href="#cara-kerja" class="hover:text-white transition-colors">Cara Kerja</a></li>
-        </ul>
-      </div>
-      <div class="md:col-span-2">
-        <h4 class="text-sm font-semibold text-white">Perusahaan</h4>
-        <ul class="mt-4 space-y-2.5 text-sm text-zinc-500">
-          <li><a href="#" class="hover:text-white transition-colors">Tentang</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Karier</a></li>
-        </ul>
-      </div>
-      <div class="md:col-span-3">
-        <h4 class="text-sm font-semibold text-white">Bantuan</h4>
-        <ul class="mt-4 space-y-2.5 text-sm text-zinc-500">
-          <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Pusat Bantuan</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Hubungi Kami</a></li>
-        </ul>
-      </div>
     </div>
-    <div class="mx-auto max-w-content px-5 lg:px-8 mt-12 pt-6 border-t border-zinc-900 flex flex-col sm:flex-row gap-3 justify-between text-xs text-zinc-600">
-      <p>&copy; 2026 Nusatix. Semua hak dilindungi.</p>
-      <div class="flex gap-5">
-        <a href="#" class="hover:text-zinc-400 transition-colors">Kebijakan Privasi</a>
-        <a href="#" class="hover:text-zinc-400 transition-colors">Syarat &amp; Ketentuan</a>
-      </div>
+    <div class="mx-auto max-w-content px-5 lg:px-8 mt-12 pt-6 border-t border-zinc-900 flex flex-col sm:flex-row gap-3 justify-between text-xs text-zinc-600 font-sans">
+      <p>&copy; 2026 KARYA Studio. Semua hak dilindungi.</p>
+      <p>Dibuat dengan disiplin desain, bukan template.</p>
     </div>
   </footer>
 
+  <!-- Floating scroll-to-top -->
+  <button id="to-top" aria-label="Kembali ke atas" class="fixed bottom-6 right-6 z-50 grid place-items-center w-12 h-12 rounded-xl bg-white text-ink shadow-lg opacity-0 translate-y-3 pointer-events-none transition-all">
+    <i class="ph ph-arrow-up text-xl"></i>
+  </button>
+
   <script>
-    // Nav: tambah backdrop + border saat di-scroll
     const nav = document.getElementById('nav');
+    const toTop = document.getElementById('to-top');
     const onScroll = () => {
-      if (window.scrollY > 12) {
-        nav.classList.add('bg-ink/80', 'backdrop-blur', 'border-b', 'border-zinc-900');
-      } else {
-        nav.classList.remove('bg-ink/80', 'backdrop-blur', 'border-b', 'border-zinc-900');
-      }
+      const y = window.scrollY;
+      nav.classList.toggle('bg-ink/85', y > 12);
+      nav.classList.toggle('backdrop-blur', y > 12);
+      nav.classList.toggle('border-b', y > 12);
+      nav.classList.toggle('border-zinc-900', y > 12);
+      const show = y > 600;
+      toTop.classList.toggle('opacity-0', !show);
+      toTop.classList.toggle('translate-y-3', !show);
+      toTop.classList.toggle('pointer-events-none', !show);
     };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // Scroll-reveal (motivated: konten masuk berurutan saat dibaca)
+    // Carousel karya
+    const track = document.getElementById('work-track');
+    const step = () => Math.min(track.clientWidth * 0.9, 540);
+    document.getElementById('work-next').addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
+    document.getElementById('work-prev').addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
+
+    // Scroll-reveal
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (!prefersReduced && 'IntersectionObserver' in window) {
       const io = new IntersectionObserver((entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
-        });
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
       }, { threshold: 0.15 });
       document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
     } else {
